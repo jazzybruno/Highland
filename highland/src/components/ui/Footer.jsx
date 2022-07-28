@@ -39,7 +39,7 @@ const Footer = ()=>{
                     </div>
                      </div>
               {/* the main footyer links contant end */}
-
+           Hello
               {/* the main footyer links  quick start */}
               <div className="main-footer-links-quick">
                 quick links
