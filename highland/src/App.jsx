@@ -1,11 +1,10 @@
 import React from 'react'
-
-import Header from './components/ui/Header/Header';
+import AboutUs from './components/pages/AboutUs/Aboutus';
 
 const App = ()=>{
   return (
     <div>
-      <Header />
+      <AboutUs />
     </div>
   )
 }
