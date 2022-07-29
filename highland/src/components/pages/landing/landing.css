@@ -1,0 +1,58 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Courier New', Courier, monospace;
+}
+a:link{
+    color: black;
+    
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    margin-right: 25px;
+
+  }
+  a:link {
+    color: black;
+  }
+  
+ 
+  
+  a:hover , a:active{
+    color:#3148A3;
+  }
+  
+ 
+.Nav{
+    background-image: url(../../images/Landing/children.png);
+    background-size: cover;
+    width: 1640px;
+    height: 712px;
+    padding-bottom: 20px;
+}
+.Nav-top{
+    display: flex;
+}
+
+.Nav-body{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+.Nav-body-span{
+    color: #3148A3;
+}
+.Nav-body-button{
+    background-color:#3148A3 ;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    height: 56px;
+    border: none;
+
+}
+.sear{
+    padding-top: 50px;
+
+}
