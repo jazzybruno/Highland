@@ -1,8 +1,127 @@
-video{
-    width: screen;
-    height: 100px;
+.aboutus-video{
+    height: 93vh;
+    width: 100%;
 }
 
-.aboutus{
-    width: screen;
-    }
+video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.orientation{
+    height: 93vh;
+    width: 100%;
+    position: absolute;
+    top: 10;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.about-video-details{
+    /* background-color: red; */
+    /* height: 93vh; */
+    display: flex;
+    width: 93%;
+    position: absolute;
+    top: 70px;
+}
+
+.about-video-details-logo1{
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding-left: 15px;
+}
+
+
+.about-video-details-logo2{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-align: center;
+}
+
+.about-video-details-logo2 a{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+.about-video-details-logo3 a{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+.about-video-details-logo4 a{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size:  16px;
+}
+
+.about-video-details-logo5 a{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+.about-video-details-logo6 a{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+ .about-video-details a:hover{
+ text-decoration: solid;
+ text-decoration-color: #3148A3;
+}
+
+
+.about-video-details-logo3{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-align: center;
+
+}
+
+.about-video-details-logo4{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-align: center;
+
+}
+
+.about-video-details-logo5{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-align: center;
+
+}
+
+.about-video-details-logo6{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-align: center;
+
+}
+
+.about-video-details-logo7{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-align: center;
+    
+}
