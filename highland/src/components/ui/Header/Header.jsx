@@ -1,8 +1,8 @@
 import React from 'react';
 import './Header.css';
-import location from '../../images/Header/location.svg'
+import location from "../../images/Header/location.svg"
 import mail from '../../images/Header/mail.svg'
-import phone from '../../images/Header/phone.svg'
+import phone from "../../images/Header/phone.svg"
 
 const Header = () => {
     return (
