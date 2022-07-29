@@ -1,14 +1,14 @@
 import React from "react";
 import './Footer.css'
-import location from '../images/Footer/location.svg';
-import email from '../images/Footer/email.svg';
-import phone from '../images/Footer/phone.svg';
-import site from '../images/Footer/site.svg'
-import pointer from '../images/Footer/pointer.svg'
-import youtube from '../images/Footer/youtube.svg'
-import twitter from '../images/Footer/twitter.svg'
-import ig from '../images/Footer/ig.svg'
-import facebook from '../images/Footer/facebook.svg'
+import location from '../../images/Footer/location.svg';
+import email from '../../images/Footer/email.svg';
+import phone from '../../images/Footer/phone.svg';
+import site from '../../images/Footer/site.svg'
+import pointer from '../../images/Footer/pointer.svg'
+import youtube from '../../images/Footer/youtube.svg'
+import twitter from '../../images/Footer/twitter.svg'
+import ig from '../../images/Footer/ig.svg'
+import facebook from '../../images/Footer/facebook.svg'
 
 const Footer = ()=>{
     return (
