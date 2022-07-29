@@ -1,10 +1,11 @@
 import React from 'react'
-import  Footer from './components/ui/Footer'
+
+import Header from './components/ui/Header/Header';
 
 const App = ()=>{
   return (
     <div>
-      <Footer></Footer>
+      <Header />
     </div>
   )
 }
