@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,200;1,200&family=Quicksand:wght@600&display=swap');
+
+.main-header{
+    background-color: #59AADB;
+    width: screen;
+    display: flex;
+}
+
+.main-header-location{
+    /* background-color: green; */
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+
+.main-header-contact{
+    /* background-color: red; */
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.main-header-location-item{
+    display: flex;
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+.main-header-location-item-icon{
+    flex: 0 0 2%;
+    max-width: 2%;
+    padding-left: 10px;
+}
+
+.main-header-location-item-text{
+    flex: 0 0 98%;
+    max-width: 98%;
+    font-size: 16px;
+    color: white;
+    font-family: 'Quicksand' , sans-serif;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.main-header-contact-info-item1{
+    display: flex;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    width: 30%;
+}
+
+.main-header-contact-info-item2{
+    display: flex;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    width: 50%;
+}
+
+.main-header-contant-info-item-icon{
+    flex: 0 0 15%;
+    max-width: 15%;
+    padding-left: 10px;
+}
+
+.main-header-contact-info-item-text{
+    flex: 0 0 85%;
+    max-width: 85%;
+    font-size: 16px;
+    color: white;
+    font-family: 'Quicksand' , sans-serif;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.main-header-contact-info{
+    display: flex;
+}
+
+.line-dividing-them{
+    width: 2px;
+    margin-left: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    background: white;
+}
