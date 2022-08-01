@@ -13,6 +13,12 @@
     font-size: 24px;
     font-weight: 200;
     text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .line{
@@ -32,3 +38,7 @@
     
 }
 
+.mission-container-description{
+    text-align: center;
+
+}
