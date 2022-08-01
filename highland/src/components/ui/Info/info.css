@@ -1,0 +1,67 @@
+.information-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.information-container-img{
+    height: 200px;
+    width: 200px;
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+}
+
+.information-container-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.information-container-name{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.information-container-role{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.information-container-contact{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+     margin-top: 5px;
+}
+
+.information-container-line-separating{
+    height: 2px;
+    width: 50%;    
+    background: grey;
+    margin-top: 25px;
+}
+
+.information-container-book{
+    margin-top: 50px;
+}
+
+.information-container-book a{
+    background-color: #3148A3;
+    margin-top: 10px;
+    padding: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    text-decoration: none;
+    font-family: Quicksand;
+    border-radius: 5px;
+}
+
