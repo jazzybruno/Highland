@@ -15,7 +15,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import Achievements from "../../ui/Achievement/Achievement";
-import { Pagination, Navigation , Autoplay  } from "swiper";
+import { Pagination, Navigation , Autoplay , EffectFade  } from "swiper";
 import Edward from '../../images/About/principal.svg'
 
 
@@ -102,7 +102,7 @@ const AboutUs = () => {
             </div>
             <div className="about-videos-navigate-description">Get to know more about <span>HIGHLAND</span> school Nyamata</div>
             <div className="about-video-navigate-link">
-                <a href="#">Details</a>
+                <a href="#about">Details</a>
             </div>
         </div>
        </div>
@@ -111,7 +111,8 @@ const AboutUs = () => {
        {/* the video about us video end */}
          {/* the video secton  end */}
             {/* the about us details start */}
-            <div className="aboutus-details">
+         <section id="about">
+         <div className="aboutus-details">
               <div className="aboutus-details-title">
                 <div className="aboutus-details-title-img"> <img src={tiltle} alt="" /></div>
                 <div className="aboutus-details-title-text"> ABOUT <span>HIGHLAND</span> SCHOOL</div>
@@ -134,16 +135,17 @@ const AboutUs = () => {
 
                 <Swiper
         slidesPerView={1}
-        spaceBetween={30}
+        effect
+        // spaceBetween={30}
         loop={true}
         pagination={{
           clickable: true
         }}
         
         navigation={true}
-        autoplay={{delay: 2000, disableOnInteraction: false}}
+        autoplay={{delay: 5000, disableOnInteraction: true}}
         
-        modules={[Pagination, Navigation , Autoplay ]}
+        modules={[Pagination, Navigation , Autoplay , EffectFade]}
         className="mySwiper"
       >
         <SwiperSlide>
@@ -196,6 +198,7 @@ const AboutUs = () => {
                  </div>
 
             </div>
+         </section>
             {/* the about us details end */}
         {/* tthe about us page end */}
         {/* <Footer /> */}
