@@ -25,9 +25,9 @@ function Landing() {
             <div className='Nav-top'>
                 <div className='Nav-top-img'><img src={logo} alt="Logo" /></div>
                 <div className='Nav-top-links'>
-                    <a href=''>ABOUT US</a>
+                    <a href='/about'>ABOUT US</a>
                     <a href=''>BLOG</a>
-                    <a href=''>ADMISSION</a>
+                    <a href='/admission'>ADMISSION</a>
                     <a href=''>OUR TEAM</a>
                     <a href=''>CONTACT</a>
                     <span className='sear'><img src={search} alt="search" /></span>
