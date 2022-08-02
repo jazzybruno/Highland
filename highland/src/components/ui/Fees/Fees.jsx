@@ -18,7 +18,7 @@ return( <div className="fees-container">
 
      <div className="fees-container-requiremenmts">
          <a  href="#">Download Requirements</a>
-         <a href="#">View in  PDF</a>
+         <a href="https://docs.google.com/document/d/1yrNsSQF9wNgzc6EUs6iCLB9lkla14vPn/edit?usp=sharing&ouid=101850246922054795349&rtpof=true&sd=true" target="_blank">View in  PDF</a>
      </div>
 </div> )
 }
