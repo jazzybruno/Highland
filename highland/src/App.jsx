@@ -8,10 +8,10 @@ import {BrowserRouter , Route , Routes} from 'react-router-dom'
 const App = ()=>{
   return (
     <div>
-
+ 
       <BrowserRouter>
         <Routes> 
-        <Route path='/' element={<Landing />} />
+        <Route path='/home' element={<Landing />} />
           <Route path="/about" element={<AboutUs/>} />
           <Route path="/admission" element={<Admission/>} />
         </Routes>
