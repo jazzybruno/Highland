@@ -1,0 +1,172 @@
+.admission-swiper-container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.swiper-images{
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.orientation1{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 20;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.about-video-details1{
+        display: flex;
+        width: 93%;
+        position: absolute;
+        top: 70px;
+        z-index: 20;
+}
+
+.about-videos-navigate-container1{
+    display: flex;  
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 15rem;
+    z-index: 20;
+}
+
+.admission-fees-sructure-container{
+   display: flex;
+   width: 100%;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;    
+   gap: 30px;
+   margin-bottom: 20px;
+}
+
+.application-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    text-align: center;
+    padding-left: 10;
+    width: 60%;
+}
+
+.application-description-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.application-process-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.application-process-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-family: 'Quicksand';
+    font-size: 32px;
+    text-align: center;
+    padding-left: 10;
+    width: 90%;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.application-process-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Quicksand';
+    padding-left: 10;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+.application-process-container{
+    display: flex;
+    flex-direction: column;
+    /* width: 25%; */
+    /* align-items: center; */
+    margin-bottom: 20px;
+}
+
+.application-process-container-number{
+  padding: 10px;
+  background-color:  #59AADB;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+}
+
+.application-process-container-label{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center; 
+    font-family: 'Poppins' , 'sans-serif';
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    /* padding-left: 10; */
+    margin-top: 20px;
+    /* width: ; */
+}
+
+.application-section-enroll a{
+    text-decoration: none;
+    color: white;
+    background: #3148A3;
+    padding: 20px;
+     border-radius: 5px;
+        font-family: 'Quicksand';
+}
+
+
+.application-section-enroll{
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.information-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.information-details-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}

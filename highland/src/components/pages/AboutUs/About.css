@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap');
+
+.aboutus-video{
+    height: 95vh;
+    width: 100%;
+}
+
+video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.orientation{
+    height: 95vh;
+    width: 100%;
+    position: absolute;
+    top: 10;
+    left: 0;
+    background-color: rgba(255, 255 , 255, 0.5);
+}
+
+.about-video-details{
+    /* background-color: red; */
+    /* height: 93vh; */
+    display: flex;
+    width: 93%;
+    position: absolute;
+    top: 70px;
+}
+
+.about-video-details-logo1{
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding-left: 15px;
+}
+
+
+.about-video-details-logo2{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-align: center;
+}
+
+.about-video-details-logo2 a{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    transition: border 3s ease-in-out;
+    border: none;
+}
+
+.about-video-details-logo2 a:hover{
+    border-bottom: 2px solid #3148A3;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+
+.about-video-details-logo3 a{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+.about-video-details-logo4 a{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size:  16px;
+}
+
+
+.about-video-details-logo5 a{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+.about-video-details-logo6 a{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+ .about-video-details a:hover{
+ text-decoration: solid;
+ text-decoration-color: #3148A3;
+}
+
+
+.about-video-details-logo3{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-align: center;
+
+}
+
+.about-video-details-logo4{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-align: center;
+
+}
+
+.about-video-details-logo5{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-align: center;
+
+}
+
+.about-video-details-logo6{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-align: center;
+
+}
+
+.about-video-details-logo7{
+    flex: 0 0 14%;
+    max-width: 14%;
+    text-align: center;
+    
+}
+
+.about-videos-navigate-container{
+    display: flex;  
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 15rem;
+}
+
+.about-videos-navigate-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 0;
+    text-align: center;
+}
+
+.about-videos-navigate-description{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.about-videos-navigate-description span{
+    color: #3148A3;
+    font-weight: normal;
+}
+
+.about-video-navigate-link{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.about-video-navigate-link a{
+    text-decoration: none;
+    color: white;
+    background-color: #3148A3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.aboutus-details-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 0;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.aboutus-details-title-img{
+    flex: 0 0 10%;
+    max-width: 10%;
+}
+
+.aboutus-details-title-text{
+    margin-top: 25px;
+}
+
+.aboutus-details-title-text span{
+ color: #3148A3;
+}
+
+.aboutus-details-descriptio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutus-details-values{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.about-container-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.about-line{
+    width: 70px;
+    display: flex;
+    height: 4px;
+    background: #3148A3;
+    /* margin-left: 20%; */
+}
+
+.about-container-values-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-details-testiomony-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 0;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+
+.mySwiper{
+    /* height: 60vh; */
+    width: 100%;
+}
+
+.about-details-testiomony-description-container{
+    display: flex;
+    width: 100%;
+    /* padding: 80px; */
+    padding-left: 80px;
+    margin-left: 10px;
+    padding-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.about-details-testimony-description-container-img{
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.about-details-testimony-description-container-message{
+    /* flex: 0 0 70%; */
+    /* max-width: 70%; */
+    margin-top: 20px;
+}
+
+.about-details-testimony-description-container-tilte{
+    color: black;
+    font-family: 'Quicksand' , sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.about-details-testimony-description-container-role{
+    color: #3148A3;
+    font-family: Quicksand;
+    margin-top: 10px;
+    font-size: 20px;
+    
+}
+
+.about-details-testimony-description-container-message{
+    color: rgb(61, 60, 59);
+    font-size: 18px;
+    font-family: sans-serif;
+    width: 85%;
+}
+
+.about-achievements-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 0;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+
+.about-container-message{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+
+
+  @media only screen and (max-width: 950px) {
+   
+    .about-details-testiomony-description-container{
+        display: flex;
+        width: 100%;
+        padding-left: 0px;
+        margin-left: 10px;
+        padding-bottom: 50px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .about-details-testimony-description-container-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about-details-testimony-description-container-img img{
+        padding-right: auto;
+        padding-left: auto;
+      }
+      
+      .about-details-testimony-description-container-message{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-videos-navigate-description{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 24px;
+        font-weight: normal;
+        padding: 20px;
+    }
+
+    .about-details-testimony-description-container-tilte{
+       text-align: center;
+    }
+
+    .aboutus-details-title{
+        font-family: 'Poppins', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 2;
+        text-align: center;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;  
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+ 
+  }
+
+  @media only screen and (max-width: 1200px) { 
+
+    .aboutus-video{
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .orientation{
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 10;
+        left: 0;
+        background-color: rgba(255, 255 , 255, 0.5);
+    }
+}
