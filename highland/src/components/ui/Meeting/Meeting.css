@@ -1,0 +1,87 @@
+.meeting-container{
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0 , 0.4);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.meeting-main-container{
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+     width: 50%;
+     border-radius:5px   ;
+     background-image: url('../../images/Admission/call.gif');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.meeting-main-container-animation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    background: #000;
+    padding-bottom: 20px;
+}
+
+.meeting-main-container-title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    /* background: #000; */
+}
+
+.meeting-main-container-desc{
+    font-family: 'Quicksand';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(255 , 255 , 255 , 0.8);
+}
+
+.meeting-main-container-desc h4{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+.meeting-main-container-desc ol{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.meeting-main-container-desc h4 span{
+    color: blue;
+}
+
+.meeting-main-container-desc ol ul{
+    margin-top: 10px;
+}
+
+.meeting-main-exit{
+    display: flex;
+    flex-direction: row;
+      justify-content: flex-end;
+    width: 100%;
+}
+
+.meeting-main-exit button{
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    background: #3148A3;
+    color: white;
+    font-weight: bold;
+}
