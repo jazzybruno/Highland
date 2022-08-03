@@ -1,5 +1,6 @@
 import React from 'react'
 import Landing from './components/pages/landing/Landing'
+import Contact from './components/pages/Contact/Contact';
 import AboutUs from './components/pages/AboutUs/Aboutus';
 import Admission from './components/pages/Admission/Admission';
 import {BrowserRouter , Route , Routes} from 'react-router-dom'
@@ -11,9 +12,10 @@ const App = ()=>{
  
       <BrowserRouter>
         <Routes> 
-        <Route path='/home' element={<Landing />} />
+        <Route path='/' element={<Landing />} />
           <Route path="/about" element={<AboutUs/>} />
-          <Route path="/" element={<Admission/>} />
+          <Route path="/admission" element={<Admission/>} />
+          <Route path="/contact" element={<Contact/>} />
         </Routes>
        </BrowserRouter>
 
