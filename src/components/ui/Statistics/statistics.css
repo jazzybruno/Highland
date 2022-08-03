@@ -1,0 +1,48 @@
+.head-statistics{
+    margin: auto;
+    display: flex;
+    text-align: center;
+    padding: 0.8em 53em;
+    
+}
+.head-sta{
+    padding-left: 20px;
+    font-size: 40px;
+    padding-top: 15px;
+}
+
+
+.top-statistics{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 13em;
+}
+.bottom-statistics{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.1em 28em;
+    
+}
+.bottom-statistics img{
+    /* margin-left: 2em; */
+}
+
+.no-statistics{
+    color:#D6DAED;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+}
+.name-sta{
+    font-size: 20px;
+}
+.office-static{
+    padding-left: 2rem;
+}
+.grad-static{
+    padding-left: 1rem;
+}
