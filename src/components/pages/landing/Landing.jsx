@@ -1,3 +1,4 @@
+
 // import React from 'react';
 // import logo from '../../images/Landing/logo.svg';
 // import search from '../../images/Landing/bx_search.svg';
@@ -119,6 +120,7 @@
 // }
 
 // export default Landing
+
 import React from 'react';
 import logo from '../../images/Landing/logo.svg';
 import search from '../../images/Landing/bx_search.svg';
@@ -136,7 +138,11 @@ import "swiper/css/pagination"
 import "swiper/css/navigation"
 import "swiper/css/autoplay"
 
-import Second from '../../ui/second/Second';
+
+
+
+import Second from '../../ui/Second/Second';
+
 import Statistics from '../../ui/Statistics/Statistics';
 import Highlights from '../../ui/Highlights/Highlights';
 
@@ -240,4 +246,7 @@ function Landing() {
   )
 }
 
-export default Landing
+
+export default Landing;
+
+

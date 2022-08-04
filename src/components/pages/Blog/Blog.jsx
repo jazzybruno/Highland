@@ -1,5 +1,9 @@
 import React from "react";
+
 // import Slider from "../../../assets/Slider";
+
+import Slider from "../../../assets/Slider";
+
 import Header from "../../ui/Header/Header";
 import Footer from "../../ui/Footer/Footer";
 import Gallery from "../Blog/Gallery";
@@ -20,8 +24,12 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 
 
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+
+
+
 
 function Blog() {
   return (

@@ -16,9 +16,15 @@
     font-family: 'Poppins', 'sans-serif';
 }
 
+
 /* *{
     font-family: 'Quicksand', 'sans-serif';
 } */
+
+*{
+    font-family: 'Quicksand', 'sans-serif';
+}
+ (Blog and Our Team pages)
 
 .admission-swiper-container{
     width: 100%;

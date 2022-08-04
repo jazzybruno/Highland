@@ -1,0 +1,23 @@
+.section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .main-heading {
+    /* color: lightblue; */
+    font-size: 24px;
+  }
+  
+  .underline {
+    height: 4px;
+    width: 4rem;
+    background-color: lightblue;
+    /* margin-top: 5px; */
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  p{
+    font-size: 14px;
+    color: #262626;
+  }
