@@ -9,6 +9,7 @@ import slide4 from "../../images/Admission/slide4.jpg"
 import Header from '../../ui/Header/Header';
 import Form from '../../ui/form/form';
 import Footer from '../../ui/Footer/Footer';
+import Cont from '../../ui/Cont/Cont'
 import {Swiper , SwiperSlide} from 'swiper/react'
 import{Pagination , Navigation , Autoplay , EffectFade} from 'swiper'
 import "swiper/css"
@@ -106,6 +107,7 @@ function Contact() {
        </div>
    
        <Form />
+       <Cont/>
        <Footer />
     </div>
   )

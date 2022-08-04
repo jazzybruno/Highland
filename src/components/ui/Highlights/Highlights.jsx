@@ -25,9 +25,9 @@ function Highlights() {
   return (
     <div>
        
-       <div className="aboutus-details-title">
-                <div className="aboutus-details-title-img"> <img src={tiltle} alt="" /></div>
-                <div className="aboutus-details-title-text"> Highlights  </div>
+       <div className="second-details-title">
+                <div className="second-details-title-img"> <img src={tiltle} alt="" /></div>
+                <div className="second-details-title-text"> Highlights  </div>
               </div>
         
         < Swiper 

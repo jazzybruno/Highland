@@ -1,15 +1,31 @@
-.head-highlights{
-    margin: auto;
-    display: flex;
+.second-details-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 0;
     text-align: center;
-    padding: 0.8em 53em;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    clear: right;
+    font-family: 'Quicksand';
+}
+
+.second-details-title-img{
+    flex: 0 0 4%;
+    max-width: 10%;
     
 }
-.head-high{
-    padding-left: 20px;
-       font-size: 40px;
-       padding-top: 15px;
-       margin-bottom:30px ;
+
+.second-details-title-text{
+    margin-top: 25px;
+    font-family: 'Quicksand';
+}
+
+.second-details-title-text span{
+ color: #3148A3;
 }
 .swiper-image{
     /* height: 50rem; */
@@ -19,7 +35,7 @@
     /* padding: 2em; */
     /* width: 100rem; */
 }
-admission-swiper-container{
+.admission-swiper-container{
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -28,7 +44,6 @@ admission-swiper-container{
 .swiper-image{
     width: 100%;
     height: 90vh;
-    
 }
 
 .swiper-image img{
