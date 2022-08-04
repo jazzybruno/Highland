@@ -8,7 +8,7 @@
 
 .main-header-location{
     /* background-color: green; */
-    flex: 0 080%;
+    flex: 0 0 70%;
     max-width: 70%;
 }
 
@@ -60,13 +60,14 @@
 }
 
 .main-header-contact-info-item-text{
+
     flex: 0 0 82%;
     max-width: 82%;
+
     font-size: 16px;
     color: white;
     font-family: 'Quicksand' , sans-serif;
     font-weight: bold;
-    
 }
 
 .main-header-contact-info{
@@ -87,7 +88,7 @@
     .main-header{
         background-color: #59AADB;
         width: screen;
-        /* display: none; */
+        display: none;
     }
     
     
