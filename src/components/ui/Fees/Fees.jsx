@@ -12,7 +12,7 @@ return( <div className="fees-container">
       <div className="fees-container-line-line"></div>
      </div>
      <div className="fees-container-level">
-        <h3>{props.level}</h3>
+        <p>{props.level}</p>
         <h4>{props.desc}</h4>
      </div>
 

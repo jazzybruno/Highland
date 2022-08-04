@@ -1,0 +1,30 @@
+.main-container{
+    display: flex;
+    
+}
+
+.image-container{
+    margin-left: 3em;
+    border-bottom: 1px solid black;
+}
+.team-titles{
+    margin-left: 2em;
+    
+}
+
+
+
+.img-fluid {
+    width: 400px;
+    height: 420px;
+}
+
+.blog-team-icon {
+    width: 100px;
+    padding-top: 2em;
+}
+
+
+.svg {
+    padding-bottom: 2em;
+}

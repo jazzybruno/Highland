@@ -35,15 +35,17 @@
 }
 
 .fees-container-level{
-    padding-left: 10px;
+    padding-left: 35px;
     margin-top: -20px;
 }
 
-.fees-container-level h3{
+.fees-container-level p{
 color: black;
 font-size: 32px;
 font-family: 'Quicksand';
 font-weight: 600;
+margin-top: 40px;
+margin-bottom: 10px;
 }
 
 .fees-container-level h4{
@@ -51,7 +53,8 @@ font-weight: 600;
     font-size: 20px;
     font-family: 'Quicksand';
     font-weight: 400;
-    margin-top: -15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
     }
 
 .fees-container-requiremenmts{
@@ -59,7 +62,7 @@ font-weight: 600;
     flex-direction: row;
     justify-content: center;
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .fees-container-requiremenmts a{
