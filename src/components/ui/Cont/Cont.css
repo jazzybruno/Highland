@@ -1,0 +1,22 @@
+.second-contact{
+    display: flex;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    text-align: center;
+    justify-content: space-around;
+    font-family: 'Quicksand';
+padding-top: 2em;
+padding-bottom: 2em;
+font-size: 1.3em;
+
+
+
+
+}
+.contact-name{
+    /* margin-right: 2em; */
+    justify-content: center;
+    align-items: center;
+}

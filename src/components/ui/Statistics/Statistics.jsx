@@ -14,9 +14,9 @@ import tiltle from '../../images/About/title.svg'
 function statistics() {
   return (
     <div>
-         <div className="aboutus-details-title">
-                <div className="aboutus-details-title-img"> <img src={tiltle} alt="" /></div>
-                <div className="aboutus-details-title-text"> Statistics  </div>
+         <div className="second-details-title">
+                <div className="second-details-title-img"> <img src={tiltle} alt="" /></div>
+                <div className="second-details-title-text"> Statistics  </div>
               </div>
         <div className='top-statistics'>
         <div>
