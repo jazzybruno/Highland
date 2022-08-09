@@ -82,9 +82,7 @@
 .form-svg{
     transform: translateX(20px);
 }
-::-webkit-input-placeholder {
-    /* padding-left: 25px; */
-  }
+
 .form-svgg{
     transform: translateX(20px);
     margin-bottom: 1.6em;

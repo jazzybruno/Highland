@@ -1,0 +1,28 @@
+.blog-container {
+    font-family: 'Quicksand';
+}
+
+.application-section-enroll a{
+    text-decoration: none;
+    color: white;
+    background: #3148A3;
+    padding: 20px;
+     border-radius: 5px;
+        font-family: 'Quicksand';
+}
+
+
+.application-section-enroll{
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.blog-image {
+    padding-bottom: 2em;
+    width: 600px; 
+}
+
+.card-body>p {
+    padding-bottom: 1em;
+    border-bottom: 1px solid black;
+}
