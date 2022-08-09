@@ -1,0 +1,34 @@
+.registration-finish{
+    background-color: #59AADB;
+    border:none;
+    color: white;
+    font-family: 'Quicksand';
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 3px;
+ 
+} 
+ .finsih-registration{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+ }
+
+
+
+
+.registration-body{
+    font-family: 'Quicksand';
+    /* border: 1px solid black; */
+    width: 38%;
+}
+.registration-head{
+   font-weight: bolder;
+   text-align: center;
+}
+.registration-para{
+    font-weight: light;
+    /* color: #59AADB; */
+  
+}
+
