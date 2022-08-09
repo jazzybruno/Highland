@@ -1,0 +1,77 @@
+.form-container{
+    width: 45%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    justify-content: space-between;
+    padding: 10px;
+    /* align-items: center; */
+ 
+    
+}
+.form-container h3{
+    text-align: center;
+    justify-content: center;
+
+}
+.right-form input::placeholder{
+    font-family: 'Quicksand';
+    /* font-size: 1rem; */
+}
+.left-form input::placeholder{
+    font-family: 'Quicksand';
+}
+
+.right-form{
+    float: right;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.right-form input{
+    font-size: 1.5em;
+    padding:20px ;
+    margin-bottom:0.5em ;
+    margin-top: 0.5em;
+    /* border-radius: 2px; */
+    
+}
+.left-form input{
+    font-size: 1.5em;
+    padding:20px ;
+    margin-bottom:0.5em ;
+    margin-top: 0.5em;
+    /* border-radius: 2px; */
+    
+}
+.left-form{
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.enroll-back{
+    /* width: 30%; */
+    color: white;
+    background-color: #59AADB;
+    border: none;
+    font-family: 'Quicksand';
+    padding:8px  25px;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-top: 10px;
+
+}
+.enroll-next{
+    /* width: 30%; */
+    color: white;
+    background-color: #59AADB;
+    border: none;
+    margin-top: 10px;
+    font-family: 'Quicksand';
+    padding:8px  25px;
+    font-size: 20px;
+    border-radius: 4px;
+
+}
