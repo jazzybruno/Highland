@@ -1,0 +1,77 @@
+/* .enroll-flex-container {
+    display: inline-flex;
+    margin-top: 4em;
+}
+
+*{
+    font-family: 'Quicksand';
+}
+
+.levels-cont {
+    padding-left: 4em;
+}
+
+.choose-level-cont {
+    padding-left: 56em;
+}
+
+.all-container {
+    display: flex;
+}
+
+.all-levels-container {
+    padding-left: 16em;
+    min-width: 30vw;
+}
+
+.parent-details-container {
+    padding-left: 32em;
+    min-width: 700px; 
+} */
+
+.main-container-enroll{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+}
+
+.main-container-enroll-upper-part{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* background: green; */
+    /* height: 20%; */
+    align-items: center;
+}
+
+.main-container-enroll-lower-part{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* background: #000; */
+    height: 80%;
+}
+
+.main-container-enroll-lower-left-part{
+/* background: lavender; */
+height: 100%;
+flex: 0 0 25%;
+max-width: 25%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.main-container-enroll-lower-right-part{
+    /* background: lightblue; */
+    height: 100%;
+    flex: 0 0 75%;
+    max-width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10em;
+    }

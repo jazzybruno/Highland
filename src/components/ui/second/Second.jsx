@@ -20,9 +20,9 @@ function Landing() {
         </div>
         </div> */}
 
-<div className="aboutus-details-title">
-                <div className="aboutus-details-title-img"> <img src={tiltle} alt="" /></div>
-                <div className="aboutus-details-title-text">Principal’s Foreword  </div>
+<div className="second-details-title">
+                <div className="second-details-title-img"> <img src={tiltle} alt="" /></div>
+                <div className="second-details-title-text">Principal’s Foreword  </div>
               </div>
 
         <div className='center-lan' >

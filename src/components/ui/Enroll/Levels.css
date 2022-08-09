@@ -1,0 +1,101 @@
+.steps {
+    display: flex;
+}
+
+*{
+    font-family: 'Quicksand';
+}
+
+.step-container-1{
+    background-color: lightskyblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.step-container-2{
+    background-color: lightgrey;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+.step-container-3{
+    background-color: lightgrey;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+.connector {
+    padding-left: 1.5em;
+}
+
+
+.step-number {
+    color: black;
+    text-decoration: none;
+}
+
+.step-container-1, .step-container-2, .step-container-3 {
+    padding-top: 12px;
+}
+
+.step-text {
+    text-align: center;
+}
+
+.step-text > p {
+    margin-top: 12px;
+    padding-left: 12px;
+}
+
+.enroll-header {
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 50%;
+    margin: auto;
+    text-align: center;
+}
+ .enroll-header h2{
+    font-family: 'QuickSand';
+    color: darkblue;
+}
+
+.levels-container {
+    font-family: 'QuickSand';
+    justify-content: space-around;
+    
+
+}
+
+.choose-level-title {
+    font-family: 'Quicksand';
+    margin-bottom: 3em;
+}
+
+.enroll-class-btn {
+    width: 200px;
+    height: 42px;
+    background-color: lightskyblue;
+    text-align: center;
+    vertical-align: center;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.enroll-continue-btn {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+}

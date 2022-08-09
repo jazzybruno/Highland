@@ -1,5 +1,5 @@
 import React from 'react'
-import './Highlights.css';
+import './Gallery.css';
 import slide1  from '../../images/Landing/swiper1.png'
 import slide2  from '../../images/Landing/swiper2.png'
 import slide3  from '../../images/Landing/swiper3.png'
@@ -21,13 +21,13 @@ import "swiper/css/autoplay"
 import dots from '../../images/Landing/threedots.svg'
 import tiltle from '../../images/About/title.svg'
 
-function Highlights() {
+function Gallery() {
   return (
-    <div>
+    <div className='gallery-container'>
        
-       <div className="second-details-title">
-                <div className="second-details-title-img"> <img src={tiltle} alt="" /></div>
-                <div className="second-details-title-text"> Highlights  </div>
+       <div className="aboutus-details-title">
+                <div className="aboutus-details-title-img"> <img src={tiltle} alt="" /></div>
+                <div className="aboutus-details-title-text"> Gallery  </div>
               </div>
         
         < Swiper 
@@ -97,4 +97,4 @@ function Highlights() {
   )
 }
 
-export default Highlights
+export default Gallery;
