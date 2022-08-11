@@ -1,6 +1,7 @@
 import React from 'react';
 import './Levels.css';
-// import connector from '../../images/Enroll/line 31.png'
+
+import connector from '../../images/Enroll/line.png'
 import {Link , Route , Routes} from 'react-router-dom';
 
 function Level() {

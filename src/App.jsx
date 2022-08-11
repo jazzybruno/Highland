@@ -25,11 +25,9 @@ const App = ()=>{
       <BrowserRouter>
         <Routes> 
 
+        <Route path='/admission/enroll' element={<ParentDetails />} />
 
-        <Route path='/landing' element={<Landing />} />
-
-        <Route path='/' element={<ParentDetails />} />
-
+        <Route path="/" element={<Landing/>} />
 
           <Route path="/about" element={<AboutUs/>} />
           <Route path="/admission" element={<Admission/>} />
