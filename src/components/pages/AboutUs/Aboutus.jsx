@@ -74,7 +74,7 @@ const AboutUs = () => {
         <video src={Video}  autoPlay={true} loop={true}  muted />
         <div className="about-video-details">
             <div className="about-video-details-logo1">
-               <a href="landing"> <img src={logo} alt="logo" /></a>
+               <a href="/"> <img src={logo} alt="logo" /></a>
             </div>
             <div className="about-video-details-logo2">
                 <a href="about">ABOUT US</a>
