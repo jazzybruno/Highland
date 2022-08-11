@@ -8,7 +8,7 @@ function Level() {
         <div className='all-levels-container'>
             <div className='steps'>
                 <div className='step-container-1'>
-                    <Link to='/' className="step-number">1</Link>
+                    <Link to='/enroll' className="step-number">1</Link>
                 </div>
                 <div className='step-text'>
                     <p>Choose Level</p>
@@ -17,7 +17,7 @@ function Level() {
             <img src={connector} alt="connector" className='connector' />
             <div className='steps'>
                 <div className='step-container-2'>
-                    <Link to='/' className="step-number">2</Link>
+                    <Link to='/enrollstudent' className="step-number">2</Link>
                 </div>
                 <div className='step-text'>
                     <p>Choose Level</p>

@@ -5,17 +5,35 @@
 
 .image-container{
     margin-left: 3em;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000000;
+    width: 400px;
+    text-align: center;
 }
 .team-titles{
     margin-left: 2em;
     
 }
 
+.ourteam-desc {
+    margin-left: 24em;
+    margin-bottom: 4em;
+}
+
+.ourteam-heading-desc {
+    margin-left: 7em;
+}
+
+.all-team-container {
+    width: 500px;
+}
+
+.image-container-details {
+    text-align: center;
+}
 
 
 .img-fluid {
-    width: 400px;
+    /* width: 400px;/ */
     height: 420px;
 }
 

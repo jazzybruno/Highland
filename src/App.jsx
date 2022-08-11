@@ -5,13 +5,19 @@ import AboutUs from './components/pages/AboutUs/Aboutus';
 import Admission from './components/pages/Admission/Admission';
 import OurTeam from './components/pages/outTeam/OurTeam';
 import Blog from './components/pages/Blog/Blog';
+import {BrowserRouter , Route , Routes} from 'react-router-dom'
 import Enroll from './components/pages/Enroll/Enroll-1';
 import Level from './components/ui/Enroll/Levels';
 import Heading from './components/ui/Enroll/Heading';
 import ChooseLevel from './components/ui/Enroll/Choose-level';
-import ParentDetails from './components/ui/Enroll/ParentsDetails';
-import EnrollParents from './components/pages/Enroll/Enroll-P'
+import MotherDetails from './components/ui/Enroll/MotherDetails';
+import FatherDetails from './components/ui/Enroll/FatherDetails';
+import EnrollMother from './components/pages/Enroll/Enroll-P'
+import EnrollFather from './components/pages/Enroll/Enroll-F'
 import Adress from './components/pages/Enroll/Adress';
+import Register from './components/pages/Enroll/Enroll-R';
+import EnrollStudent from './components/pages/Enroll/Enroll-S'
+import EnrollForm from './components/pages/Enroll/Enroll-MS';
 import {BrowserRouter , Route , Routes} from 'react-router-dom';
 
 
@@ -32,6 +38,15 @@ const App = ()=>{
           <Route path="/blog" element={<Blog/>} />
           <Route path="/team" element={<OurTeam/>} />
           <Route path="/enroll" element={<Enroll/>} />
+        <Route path="/" element={<Landing/>} />
+          <Route path="/enroll" element={<Enroll />} />
+          <Route path="/enrollstudent" element={<EnrollStudent />} />
+          <Route path="/enrollper" element={<EnrollForm />} />
+          <Route path="/enrollad" element={<Adress />} />
+          <Route path="/enrollfa" element={<EnrollFather />} />
+          <Route path="/enrollmo" element={<EnrollMother />} />
+          <Route path="/enrollreg" element={<Register/>} />
+
         </Routes>
        </BrowserRouter>
 

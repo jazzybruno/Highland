@@ -2,10 +2,9 @@ import React from 'react';
 import './Enroll-1.css'
 import Heading from "../../ui/Enroll/Heading";
 import Level from '../../ui/Enroll/Levels';
-import MotherDetails from '../../ui/Enroll/MotherDetails';
+import Registration from '../../ui/Registration/Registration';
 
-function EnrollMother() {
-
+function Register() {
     return (
         <div>
            <div className="main-container-enroll">
@@ -27,8 +26,7 @@ function EnrollMother() {
 
                   {/* the lower right part start  */}
                   <div className="main-container-enroll-lower-right-part">  
-
-                     <MotherDetails />
+                     <Registration />
                     </div>
                     {/* the lower right part end  */}
             </div>
@@ -39,6 +37,4 @@ function EnrollMother() {
     )
 }
 
-
-export default EnrollMother;
-
+export default Register;

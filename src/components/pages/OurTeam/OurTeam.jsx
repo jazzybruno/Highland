@@ -1,9 +1,17 @@
 import React from "react";
 // import { useState } from "react";
+<<<<<<< Updated upstream:src/components/pages/OurTeam/OurTeam.jsx
 import "../OurTeam/OurTeam.css";
 import "../AboutUs/About.css";
 import Layout from "../OurTeam/Layout";
 import team from "../../images/OurTeam/team-icon.png";
+=======
+import "./OurTeam.css";
+// import "../AboutUs/About.css";
+import Layout1 from "./Layout1";
+import Layout2 from "./Layout2"
+import team from "../../images/Contact/team.svg";
+>>>>>>> Stashed changes:src/components/pages/outTeam/OurTeam.jsx
 import logo from "../../images/Landing/logo.svg";
 import search from "../../images/Landing/bx_search.svg";
 import slide1 from "../../images/Admission/admit.jpg";
@@ -19,6 +27,13 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 
+<<<<<<< Updated upstream:src/components/pages/OurTeam/OurTeam.jsx
+=======
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'  
+import kebra from '../../images/Enroll/nicole.jpg'
+
+>>>>>>> Stashed changes:src/components/pages/outTeam/OurTeam.jsx
 function OurTeam() {
   return (
     <div>
@@ -101,7 +116,7 @@ function OurTeam() {
           <div className="about-videos-navigate-title">
             <h3> OUR TEAM </h3>
           </div>
-          <div className="about-videos-navigate-description">
+          <div className="ourteam-heading-desc w-75 text-center">
             “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut
             fring illa libero, nec sodales arcu“.
           </div>
@@ -116,29 +131,29 @@ function OurTeam() {
           <h6 className=" team-title text-grey fw-light">HIGHLAND SCHOOL</h6>
         </div>
         <h2>Our Team</h2>
-        <p className="text center">
-          The dedicated teachers, classroom assistants and administration staff
+        <p className="ourteam-desc w-50 ">
+          "The dedicated teachers, classroom assistants and administration staff
           work tirelessly to provide a professional level of education to the
           pupils. They are supported by hygiene assistants and maintenance
-          staff.
+          staff."
         </p>
       </section>
       <div>
         <h2 className="team-titles">Leadership</h2>
-        <Layout />
+        <Layout1 />
       </div>
       <div>
         <h2 className="team-titles">Assistance</h2>
-        <Layout />
+        <Layout2 />
       </div>
-      <section className="container">
-        <div className="image-container w-25 mr-4">
-          <img src={slide4} alt="" className="img-fluid mb-4 pb-2 " />
+      <section className="all-team-container">
+        <div className="image-container  mr-4">
+          <img src={kebra} alt="" className="img-fluid mb-4 pb-2 " />
         </div>
-        <div className="">
-          <h4>Edward Munyaburanga</h4>
-          <h4>0788237817</h4>
-          <h6>Principal</h6>
+        <div className="image-container-details">
+          <h4>Nicole Kebra Munyaburanga</h4>
+          <h4>0781653691</h4>
+          <h6>Receptionist</h6>
         </div>
       </section>
       <Footer />

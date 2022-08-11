@@ -2,10 +2,9 @@ import React from 'react';
 import './Enroll-1.css'
 import Heading from "../../ui/Enroll/Heading";
 import Level from '../../ui/Enroll/Levels';
-import MotherDetails from '../../ui/Enroll/MotherDetails';
+import Enrollform from '../../ui/Enroll-form/Enrollform';
 
-function EnrollMother() {
-
+function EnrollForm() {
     return (
         <div>
            <div className="main-container-enroll">
@@ -27,18 +26,15 @@ function EnrollMother() {
 
                   {/* the lower right part start  */}
                   <div className="main-container-enroll-lower-right-part">  
-
-                     <MotherDetails />
+                     <Enrollform />
                     </div>
                     {/* the lower right part end  */}
             </div>
-            {/* the lower part end */}
+            {/*Enro the lower part end */}
            </div>
 
         </div>
     )
 }
 
-
-export default EnrollMother;
-
+export default EnrollForm;

@@ -30,7 +30,8 @@ function ChooseLevel() {
                 ))}
             </div>
             <div className="enroll-class-btn">
-                <Link to="/" className="enroll-continue-btn" >Continue Enrollment</Link>
+
+                <Link to="/enrollstudent" className="enroll-continue-btn" >Continue Enrollment</Link>
             </div>
         </div>
     );
