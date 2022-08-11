@@ -208,18 +208,18 @@ function Landing() {
                <a href="#"> <img src={logo} alt="logo" /></a>
             </div>
             <div className="about-video-details-logo2">
-                <a href="#">ABOUT US</a>
+                <a href="about">ABOUT US</a>
             </div>
             <div className="about-video-details-logo3">
-            <a href="#">BLOG</a>
+            <a href="blog">BLOG</a>
             </div>
             <div className="about-video-details-logo4">
-            <a href="#">ADMISSION</a>
+            <a href="admission">ADMISSION</a>
             </div>
             <div className="about-video-details-logo5">
-            <a href="#">OUR TEAM</a></div>    
+            <a href="team">OUR TEAM</a></div>    
             <div className="about-video-details-logo6">
-            <a href="#">CONTACT</a>
+            <a href="contact">CONTACT</a>
             </div>
             <div className="about-video-details-logo7">
             <a href="#"> <img src={search} alt="" /></a>
@@ -233,14 +233,18 @@ function Landing() {
             </div>
             <div className="about-videos-navigate-description">Welcome To <span>HIGHLAND</span> School a model school located in Nyamata.</div>
             <div className="about-video-navigate-link">
-                <a href="#admission">Take A tour</a>
+                <a href="#landing">Take A tour</a>
             </div>
         </div>
        </div>
+       <section id='landing'>
        <Second/>
        <Statistics/>
        <Highlights/>
        <Footer />
+
+       </section>
+       
         
     </div>
   )
