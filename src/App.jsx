@@ -18,9 +18,8 @@ import {BrowserRouter , Route , Routes} from 'react-router-dom';
 
 
 
-
 const App = ()=>{
-  return (
+  return (  
     <div>
  
       <BrowserRouter>
@@ -29,6 +28,7 @@ const App = ()=>{
         <Route path='/admission/enroll' element={<ParentDetails />} />
 
         <Route path="/" element={<Landing/>} />
+
           <Route path="/about" element={<AboutUs/>} />
           <Route path="/admission" element={<Admission/>} />
           <Route path="/contact" element={<Contact/>} />
