@@ -5,7 +5,6 @@ import AboutUs from './components/pages/AboutUs/Aboutus';
 import Admission from './components/pages/Admission/Admission';
 import OurTeam from './components/pages/outTeam/OurTeam';
 import Blog from './components/pages/Blog/Blog';
-import {BrowserRouter , Route , Routes} from 'react-router-dom'
 import Enroll from './components/pages/Enroll/Enroll-1';
 import Level from './components/ui/Enroll/Levels';
 import Heading from './components/ui/Enroll/Heading';
@@ -29,7 +28,7 @@ const App = ()=>{
       <BrowserRouter>
         <Routes> 
 
-        <Route path='/admission/enroll' element={<ParentDetails />} />
+        {/* <Route path='/admission/enroll' element={<ParentDetails />} /> */}
 
         <Route path="/" element={<Landing/>} />
           <Route path="/about" element={<AboutUs/>} />
