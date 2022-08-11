@@ -8,7 +8,7 @@
 
 .main-header-location{
     /* background-color: green; */
-    flex: 0 0 70%;
+    flex: 0 080%;
     max-width: 70%;
 }
 
@@ -87,7 +87,7 @@
     .main-header{
         background-color: #59AADB;
         width: screen;
-        display: none;
+        /* display: none; */
     }
     
     

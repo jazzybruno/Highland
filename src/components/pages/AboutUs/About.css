@@ -55,27 +55,32 @@ video{
 }
 
 .about-video-details-logo2 a:hover{
-    border-bottom: 2px solid #3148A3;
+    border-bottom: 2px solid black;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
+    color:#3148A3;
 }
 .about-video-details-logo3 a:hover{
-    border-bottom: 2px solid #3148A3;
+    border-bottom: 2px solid black;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
+    color:#3148A3;
 }.about-video-details-logo4 a:hover{
-    border-bottom: 2px solid #3148A3;
+    border-bottom: 2px solid black;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
+    color:#3148A3;
 }.about-video-details-logo5 a:hover{
-    border-bottom: 2px solid #3148A3;
+    border-bottom: 2px solid black;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
+    color:#3148A3;
 }
 .about-video-details-logo6 a:hover{
-    border-bottom: 2px solid #3148A3;
+    border-bottom: 2px solid black;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
+    color:#3148A3;
 }
 
 .about-video-details-logo3 a{

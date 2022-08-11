@@ -19,8 +19,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'  
+// import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/js/bootstrap.bundle.min.js'  
 
 function OurTeam() {
   return (
@@ -77,19 +77,19 @@ function OurTeam() {
           </a>
         </div>
         <div className="about-video-details-logo2">
-          <a href="#">ABOUT US</a>
+          <a href="about">ABOUT US</a>
         </div>
         <div className="about-video-details-logo3">
-          <a href="#">BLOG</a>
+          <a href="blog">BLOG</a>
         </div>
         <div className="about-video-details-logo4">
-          <a href="#">ADMISSION</a>
+          <a href="admission">ADMISSION</a>
         </div>
         <div className="about-video-details-logo5">
-          <a href="#">OUR TEAM</a>
+          <a href="team">OUR TEAM</a>
         </div>
         <div className="about-video-details-logo6">
-          <a href="#">CONTACT</a>
+          <a href="contact">CONTACT</a>
         </div>
         <div className="about-video-details-logo7">
           <a href="#">
@@ -109,11 +109,11 @@ function OurTeam() {
             fring illa libero, nec sodales arcu“.
           </div>
           <div className="about-video-navigate-link">
-            <a href="#admission">Details</a>
+            <a href="#team">Details</a>
           </div>
         </div>
       </div>
-      <section className="text-center">
+      <section className="text-center" id="team">
         <div className="svg">
           <img src={team} alt="team" className="blog-team-icon" />
           <h6 className=" team-title text-grey fw-light">HIGHLAND SCHOOL</h6>
