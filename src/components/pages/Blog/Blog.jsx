@@ -74,7 +74,7 @@ function Blog() {
         {/* the contents on the swiper start/ */}
         <div className="about-video-details1">
           <div className="about-video-details-logo1">
-            <a href="landing">
+            <a href="/">
               {" "}
               <img src={logo} alt="logo" />
             </a>
