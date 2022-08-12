@@ -5,7 +5,7 @@ const people = [
     {
         photo: info,
         name: "Isaac Kamali",
-        role: "IT Assistant",
+        role: "Revenue Collector",
         contact: "0782058797"
     },
     {
