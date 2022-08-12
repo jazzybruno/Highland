@@ -44,7 +44,8 @@
     font-weight: bolder;
     color: white;
     font-family: 'Poppins' , sans-serif;
-
+    margin-bottom: 1rem;
+    line-height: normal;
 }
 
 .footer-contact-title :last-child  {
@@ -67,6 +68,8 @@
     color: white;
     font-family: 'Poppins' , sans-serif;
     margin-top: -55px;
+    margin-bottom: 1rem;
+    line-height: normal;
 }
 
 .footer-media-title ::after{
