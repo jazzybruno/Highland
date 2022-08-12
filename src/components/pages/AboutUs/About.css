@@ -50,7 +50,6 @@ video{
     color: black;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
-    transition: border 3s ease-in-out;
     border: none;
 }
 
