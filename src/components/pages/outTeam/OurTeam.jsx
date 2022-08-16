@@ -105,8 +105,7 @@ function OurTeam() {
             <h3> OUR TEAM </h3>
           </div>
           <div className="about-videos-navigate-description">
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut
-            fring illa libero, nec sodales arcu“.
+          <span>Highland's</span> Teams Members
           </div>
           <div className="about-video-navigate-link">
             <a href="#team">Details</a>
