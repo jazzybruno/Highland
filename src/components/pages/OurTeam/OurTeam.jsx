@@ -110,8 +110,7 @@ function OurTeam() {
 
           <div className="ourteam-heading-desc w-75 text-center">
           <div className="about-videos-navigate-description">
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut
-            fring illa libero, nec sodales arcu“.
+           Highland's Teams Members
           </div>
           <div className="about-video-navigate-link">
             <a href="#admission">Details</a>

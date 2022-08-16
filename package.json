@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "bootstrap": "^5.2.0",
+    "emailjs": "^4.0.1",
     "esbuild": "^0.14.54",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
