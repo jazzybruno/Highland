@@ -4,9 +4,9 @@ import "../OurTeam/OurTeam.css";
 import "../AboutUs/About.css";
 import team from "../../images/OurTeam/team-icon.png";
 import "./OurTeam.css";
-// import "../AboutUs/About.css";
 import Layout1 from "./Layout1";
 import Layout2 from "./Layout2"
+
 import logo from "../../images/Landing/logo.svg";
 import search from "../../images/Landing/bx_search.svg";
 import slide1 from "../../images/Admission/admit.jpg";
@@ -107,7 +107,9 @@ function OurTeam() {
           <div className="about-videos-navigate-title">
             <h3> OUR TEAM </h3>
           </div>
+
           <div className="ourteam-heading-desc w-75 text-center">
+          <div className="about-videos-navigate-description">
             “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut
             fring illa libero, nec sodales arcu“.
           </div>
@@ -126,7 +128,12 @@ function OurTeam() {
           "The dedicated teachers, classroom assistants and administration staff
           work tirelessly to provide a professional level of education to the
           pupils. They are supported by hygiene assistants and maintenance
-          staff."
+          staff." </p>
+        <p className="text center">
+          The dedicated teachers, classroom assistants and administration staff
+          work tirelessly to provide a professional level of education to the
+          pupils. They are supported by hygiene assistants and maintenance
+          staff.
         </p>
       </section>
       <div>
@@ -145,10 +152,13 @@ function OurTeam() {
           <h4>Nicole Kebra Munyaburanga</h4>
           <h4>0781653691</h4>
           <h6>Receptionist</h6>
+
         </div>
       </section>
-      <Footer />
     </div>
+    <Footer />
+  </div>
+    
   );
 }
 

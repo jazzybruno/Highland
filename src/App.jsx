@@ -20,14 +20,11 @@ import EnrollForm from './components/pages/Enroll/Enroll-MS';
 import {BrowserRouter , Route , Routes} from 'react-router-dom';
 
 
-
 const App = ()=>{
-  return (  
-    <div>
+  return (    <div>
  
       <BrowserRouter>
         <Routes> 
-
         {/* <Route path='/admission/enroll' element={<ParentDetails />} /> */}
 
         <Route path="/" element={<Landing/>} />
@@ -46,7 +43,6 @@ const App = ()=>{
           <Route path="/enrollfa" element={<EnrollFather />} />
           <Route path="/enrollmo" element={<EnrollMother />} />
           <Route path="/enrollreg" element={<Register/>} />
-
         </Routes>
        </BrowserRouter>
 

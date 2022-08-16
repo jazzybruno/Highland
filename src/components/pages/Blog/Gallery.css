@@ -1,3 +1,8 @@
+*{
+    font-family: 'Quicksand', 'sans-serif';
+}
+
+
 .head-highlights{
     margin: auto;
     display: flex;
@@ -16,9 +21,6 @@
     font-family: 'Poppins', 'sans-serif';
 }
 
-*{
-    font-family: 'Quicksand', 'sans-serif';
-}
 
 
 .admission-swiper-container{

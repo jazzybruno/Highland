@@ -1,9 +1,4 @@
 import React from "react";
-
-// import Slider from "../../../assets/Slider";
-
-import Slider from "../../../assets/Slider";
-
 import Header from "../../ui/Header/Header";
 import Footer from "../../ui/Footer/Footer";
 import Gallery from "../Blog/Gallery";
@@ -27,6 +22,8 @@ import "swiper/css/autoplay";
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import Highlights from "../../ui/Highlights/Highlights";
+
 
 
 
@@ -120,6 +117,7 @@ function Blog() {
             </div>
             <div className="about-video-navigate-link">
               <a href="#blog">Details</a>
+
             </div>
           </div>
         </div>

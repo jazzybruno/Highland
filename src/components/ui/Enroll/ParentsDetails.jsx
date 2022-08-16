@@ -27,7 +27,7 @@ function ParentDetails () {
                                 </div>
                                 {/* <div className='row mt-4'>
                                     <div className="col-md-4"></div>
-                                    <div className="col-md-4">
+                                    <div className="col-md-4">         
                                         <button type="reset" className='btn btn-primary'>Back</button>
                                     </div>
                                     <div className="col-md-4">

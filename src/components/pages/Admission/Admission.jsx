@@ -89,7 +89,7 @@ const Admission = ()=>{
                <a href="/"> <img src={logo} alt="logo" /></a>
             </div>
             <div className="about-video-details-logo2">
-                <a href="about">ABOUT US</a>
+                <a href="about">ABOUT US</a>  
             </div>
             <div className="about-video-details-logo3">
             <a href="blog">BLOG</a>
