@@ -19,9 +19,13 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 
 
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import Highlights from "../../ui/Highlights/Highlights";
+
+
+
 
 
 function Blog() {

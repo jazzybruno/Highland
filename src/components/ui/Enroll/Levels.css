@@ -60,7 +60,6 @@
     align-items: center;
     width: 30%;
     height: 50%;
-    margin: auto;
     text-align: center;
 }
  .enroll-header h2{
@@ -69,9 +68,7 @@
 }
 
 .levels-container {
-    font-family: 'QuickSand';
-    justify-content: space-around;
-    
+    font-family: 'QuickSand';    
 
 }
 
@@ -98,4 +95,32 @@
     text-decoration: none;
     text-align: center;
     padding: 20px;
+
+}
+.moth-header{
+    text-align: center;
+    font-family: 'Quicksand';
+    /* border: 1px solid black; */
+    /* width:80%; */
+    /* font-weight: 600; */
+    padding-bottom: 0.8em;
+}
+
+.enroll-input-btns {
+
+    width: 400px;
+    padding: 8px;
+    font-size: 0.9em;
+    font-family: 'Quicksand';
+}
+
+.select-back-btn, .select-next-btn {
+    background-color: lightskyblue;
+    width: 80px;
+    border: none;
+    color: white;
+    height: 40px;
+    border-radius: 5%;
+    justify-content: end;
+    align-self: flex-end;
 }

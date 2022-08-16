@@ -1,12 +1,15 @@
 .form-container{
-    width: 45%;
-    border: 2px solid black;
+align-items: center; 
+
+    /* width: 45%; */
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: row;
-    float: right;
-    justify-content: space-between;
-    padding: 10px;
+    /* float: right; */
+    /* justify-content: space-between; */
+    /* padding: 10px; */
     /* align-items: center; */
+    margin-left: 12em;
  
     
 }
@@ -24,26 +27,32 @@
 }
 
 .right-form{
-    float: right;
+
+    /* float: right; */
     display: flex;
     flex-direction: column;
    
 }
 
 .right-form input{
-    font-size: 1.5em;
-    padding:20px ;
+
+    /* font-size: 1.5em; */
+    padding:10px ;
     margin-bottom:0.5em ;
     margin-top: 0.5em;
     /* border-radius: 2px; */
+    width: 300px;
     
 }
 .left-form input{
-    font-size: 1.5em;
-    padding:20px ;
+    /* font-size: 1.5em; */
+    padding:10px ;
     margin-bottom:0.5em ;
     margin-top: 0.5em;
     /* border-radius: 2px; */
+    margin-left: 2em;
+    width: 300px;
+
     
 }
 .left-form{
@@ -51,27 +60,32 @@
     display: flex;
     flex-direction: column;
 }
-.enroll-back{
-    /* width: 30%; */
-    color: white;
-    background-color: #59AADB;
+
+
+.enroll-form-next {
+    background-color: lightskyblue;
+    width: 80px;
     border: none;
-    font-family: 'Quicksand';
-    padding:8px  25px;
-    font-size: 20px;
-    border-radius: 4px;
-    margin-top: 10px;
+    color: white;
+    height: 40px;
+    border-radius: 5%;
+    justify-content: end;
+    align-self: flex-end;
 
 }
-.enroll-next{
-    /* width: 30%; */
-    color: white;
-    background-color: #59AADB;
+.enroll-form-back {
+   
+    background-color: lightskyblue;
+    width: 80px;
     border: none;
-    margin-top: 10px;
-    font-family: 'Quicksand';
-    padding:8px  25px;
-    font-size: 20px;
-    border-radius: 4px;
+    color: white;
+    height: 40px;
+    border-radius: 5%;
 
 }
+
+.enroll-form-header {
+    text-align: center;
+    margin-left: 12em;
+}
+

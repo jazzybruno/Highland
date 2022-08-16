@@ -3,45 +3,46 @@ import React from "react";
 import "./OurTeam.css";
 // import "../AboutUs/About.css";
 // import Details from "../../ui/Details/details";
-import Image1 from "../../images/Admission/slide2.jpg";
-import Image2 from "../../images/Admission/slide3.jpg";
-import Image3 from "../../images/Admission/slide4.jpg";
+import isaac from '../../images/Enroll/isaac.png'
+import jean from '../../images/Enroll/dedieu.png'
+// import isaac from '../../images/Enroll/isaac.png'
 
-function Layout() {
+
+function Layout2() {
   return (
     <div className="main-container">
       <section className="container">
         <div className="image-container">
-          <img src={Image1} alt="" className="img-fluid mb-4 pb-2 " />
+          <img src={isaac} alt="" className="img-fluid mb-4 pb-2 " />
         </div>
         <div className="text-center">
-          <h4>Edward Munyaburanga</h4>
-          <h4>0788351500</h4>
-          <h6>Principal</h6>
+          <h4>Isaac Kamali</h4>
+          <h4>0782058797</h4>
+          <h6>IT Assistant</h6>
         </div>
       </section>
       <section className="container">
         <div className="image-container">
-          <img src={Image2} alt="" className="img-fluid mb-4 pb-2" />
+          <img src={jean} alt="" className="img-fluid mb-4 pb-2" />
         </div>
         <div className="text-center">
-          <h4>Charles Rusanganwa</h4>
-          <h4>0786831279</h4>
-          <h6>Head master</h6>
+          <h4>Jean de Dieu Nisingizwe</h4>
+          <h4>0788486613</h4>
+          <h6>Director of Studies</h6>
         </div>
       </section>
       <section className="container">
         <div className="image-container">
-          <img src={Image3} alt="" className="img-fluid mb-4 pb-2" />
+          <img src={isaac} alt="" className="img-fluid mb-4 pb-2" />
         </div>
         <div className="text-center">
-          <h4>Johnvianny Rwakoojo</h4>
-          <h4>0786207426</h4>
-          <h6>Academics Coordinator</h6>
+          <h4>Grace Mbabazi</h4>
+          <h4>0788891743</h4>
+          <h6>Accountant</h6>
         </div>
       </section>
     </div>
   );
 }
 
-export default Layout;
+export default Layout2;

@@ -1,9 +1,9 @@
 .file-form{
     display: flex;
     flex-direction: column;
-    width: 20%;
+    /* width: 20%; */
     /* border: 1px solid black; */
-    padding-left: 20px;
+    /* padding-left: 20px; */
    
     
 }
@@ -17,6 +17,8 @@
     text-align: center;
     font-family: 'Quicksand';
     font-weight: 600;
+
+    padding-bottom: 1em;
 }
 .student-photo{
     font-family: 'Quicksand';
@@ -30,9 +32,41 @@
     /* background-color: #59AADB; */
     font-size: 1em;
     display: flex;
+    padding-top: 1em;
 }
+
+.choose-file > input {
+    float: left;
+}
+
+.choose-file > p {
+    padding-top: 0.7em;
+    font-size: 16px;
+    padding-right: 3em;
+}
+
 .file-inputs{
-     width: 90%;
-     
-     
+     width: 100%;     
+}
+
+.parent-enroll-inputs {
+    width: 400px;
+}
+
+.enroll-back {
+    background-color: lightskyblue;
+    width: 80px;
+    border: none;
+    color: white;
+    height: 40px;
+    border-radius: 5%;
+}
+
+.enroll-next {
+    background-color: lightskyblue;
+    width: 80px;
+    border: none;
+    color: white;
+    height: 40px;
+    border-radius: 5%;
 }

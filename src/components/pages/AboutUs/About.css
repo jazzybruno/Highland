@@ -59,6 +59,7 @@ video{
     font-weight: 700;
     color:#3148A3;
 }
+
 .about-video-details-logo3 a:hover{
     border-bottom: 2px solid black;
     font-family: 'Quicksand', sans-serif;
@@ -84,6 +85,7 @@ video{
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
 }
+
 
 .about-video-details-logo3 a{
     flex: 0 0 14%;
@@ -210,8 +212,10 @@ video{
 }
 
 
+
 .aboutus-details-title{
     font-family: 'Poppins', sans-serif;
+
     font-size: 32px;
     font-weight: bold;
     line-height: 0;

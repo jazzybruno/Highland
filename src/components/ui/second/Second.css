@@ -11,8 +11,10 @@
     text-align: center;
     /* border:1px solid black; */
     width: 30%;
+
     border-radius: 70%;
     /* box-shadow: 20px white; */
+
 
 }
 .upper-text{
@@ -58,6 +60,7 @@
 .second-details-title-text span{
  color: #3148A3;
 }
+
 .foreword{
     /* padding-left: 20px; */
     /* padding-top:23px ; */
@@ -73,6 +76,7 @@
     align-items: center;
     width: 100%;
     font-family: 'Quicksand';
+
 }
 .word-of{
     text-align: center;
