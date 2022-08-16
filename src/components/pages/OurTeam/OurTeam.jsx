@@ -1,12 +1,11 @@
 import React from "react";
 // import { useState } from "react";
-import "../OurTeam/OurTeam.css";
-import "../AboutUs/About.css";
-import team from "../../images/OurTeam/team-icon.png";
 import "./OurTeam.css";
-import Layout1 from "./Layout1";
-import Layout2 from "./Layout2"
-
+import "../AboutUs/About.css";
+import Layout1 from "../OurTeam/Layout1";
+import Layout2 from "../OurTeam/Layout2";
+import team from "../../images/OurTeam/team-icon.png";
+import nicole from '../../images/Enroll/nicole.jpg'
 import logo from "../../images/Landing/logo.svg";
 import search from "../../images/Landing/bx_search.svg";
 import slide1 from "../../images/Admission/admit.jpg";
@@ -21,9 +20,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'  
-import kebra from '../../images/Enroll/nicole.jpg'
 
 function OurTeam() {
   return (
@@ -74,28 +70,28 @@ function OurTeam() {
       {/* the contents on the swiper start/ */}
       <div className="about-video-details1">
         <div className="about-video-details-logo1">
-          <a href="#">
+          <a href="/#">
             {" "}
             <img src={logo} alt="logo" />
           </a>
         </div>
         <div className="about-video-details-logo2">
-          <a href="#">ABOUT US</a>
+          <a href="/about#">ABOUT US</a>
         </div>
         <div className="about-video-details-logo3">
-          <a href="#">BLOG</a>
+          <a href="/blog#">BLOG</a>
         </div>
         <div className="about-video-details-logo4">
-          <a href="#">ADMISSION</a>
+          <a href="/admission#">ADMISSION</a>
         </div>
         <div className="about-video-details-logo5">
-          <a href="#">OUR TEAM</a>
+          <a href="/team#">OUR TEAM</a>
         </div>
         <div className="about-video-details-logo6">
-          <a href="#">CONTACT</a>
+          <a href="/contact#">CONTACT</a>
         </div>
         <div className="about-video-details-logo7">
-          <a href="#">
+          <a href="/search#">
             {" "}
             <img src={search} alt="" />
           </a>
@@ -107,27 +103,20 @@ function OurTeam() {
           <div className="about-videos-navigate-title">
             <h3> OUR TEAM </h3>
           </div>
-
-          <div className="ourteam-heading-desc w-75 text-center">
           <div className="about-videos-navigate-description">
            Highland's Teams Members
           </div>
           <div className="about-video-navigate-link">
-            <a href="#admission">Details</a>
+            <a href="#ourteam">Details</a>
           </div>
         </div>
       </div>
-      <section className="text-center">
+      <section id="ourteam" className="text-center">
         <div className="svg">
           <img src={team} alt="team" className="blog-team-icon" />
           <h6 className=" team-title text-grey fw-light">HIGHLAND SCHOOL</h6>
         </div>
         <h2>Our Team</h2>
-        <p className="ourteam-desc w-50 ">
-          "The dedicated teachers, classroom assistants and administration staff
-          work tirelessly to provide a professional level of education to the
-          pupils. They are supported by hygiene assistants and maintenance
-          staff." </p>
         <p className="text center">
           The dedicated teachers, classroom assistants and administration staff
           work tirelessly to provide a professional level of education to the
@@ -143,22 +132,18 @@ function OurTeam() {
         <h2 className="team-titles">Assistance</h2>
         <Layout2 />
       </div>
-      <section className="all-team-container">
-        <div className="image-container  mr-4">
-          <img src={kebra} alt="" className="img-fluid mb-4 pb-2 " />
+      <section className="team-section-details">
+        <div className="image-container">
+          <img src={nicole} alt="" className="img-fluid mb-4 pb-2" />
         </div>
-        <div className="image-container-details">
+        <div className="text-center">
           <h4>Nicole Kebra Munyaburanga</h4>
-          <h4>0781653691</h4>
-          <h6>Receptionist</h6>
-
+          <h4>0786207426</h4>
+          <h6>Academics Coordinator</h6>
         </div>
       </section>
+      <Footer />
     </div>
-    <Footer />
-  </div>
-    
   );
 }
-
 export default OurTeam;

@@ -14,6 +14,7 @@
     
 }
 
+
 .ourteam-desc {
     margin-left: 24em;
     margin-bottom: 4em;
@@ -35,7 +36,6 @@
 
 
 .img-fluid {
-    width: 400px;
     height: 420px;
 }
 
@@ -47,4 +47,8 @@
 
 .svg {
     padding-bottom: 2em;
+}
+
+.team-section-details {
+    width: 400px;
 }
