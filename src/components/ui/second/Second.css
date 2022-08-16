@@ -2,6 +2,7 @@
     float: right;
     clear: right;
 
+
     /* border: 2px solid blue; */
     ;
 }
@@ -82,7 +83,9 @@
     /* padding-left: 24px; */
     justify-content: center;
     display: flex;
+
     font-family: 'Quicksand';
+
 }
 
 .word-of-container{

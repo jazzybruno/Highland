@@ -3,12 +3,6 @@ import logo from '../../images/Landing/logo.svg';
 import './Levels.css';
 
 
-
-
-
-
-
-
 function Heading () {
     return  (
         <div className='enroll-header'>

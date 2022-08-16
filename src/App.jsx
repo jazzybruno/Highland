@@ -15,23 +15,18 @@ import Adress from './components/pages/Enroll/Adress';
 import {BrowserRouter , Route , Routes} from 'react-router-dom';
 
 
-
-
-
 const App = ()=>{
-  return (  
-    <div>
+  return (    <div>
  
       <BrowserRouter>
         <Routes> 
-
-        <Route path="/" element={<Landing/>} />
-          <Route path="/about" element={<AboutUs/>} />
-          <Route path="/admission" element={<Admission/>} />
-          <Route path="/contact" element={<Contact/>} />
-          <Route path="/blog" element={<Blog/>} />
           <Route path="/team" element={<OurTeam/>} />
           <Route path="/enroll" element={<Enroll/>} />
+        <Route path='/' element={<Landing />} />
+          <Route path="/about" element={<AboutUs/>} />
+          <Route path="/admission" element={<Admission/>} />
+          <Route path="/blog" element={<Blog/>} />
+          <Route path="/contact" element={<Contact/>} />
         </Routes>
        </BrowserRouter>
 

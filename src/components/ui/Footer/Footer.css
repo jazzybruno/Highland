@@ -44,6 +44,7 @@
     font-weight: bolder;
     color: white;
     font-family: 'Poppins' , sans-serif;
+
     margin-bottom: 1rem;
     line-height: normal;
 }
@@ -68,12 +69,13 @@
     color: white;
     font-family: 'Poppins' , sans-serif;
     margin-top: -55px;
+
     margin-bottom: 1rem;
     line-height: normal;
 }
 
 .footer-media-title ::after{
-    content: "";
+    content: "";    
     display: block;
     width: 60%;
     height: 3px;
