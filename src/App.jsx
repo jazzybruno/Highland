@@ -3,7 +3,7 @@ import Landing from './components/pages/landing/Landing'
 import Contact from './components/pages/Contact/Contact';
 import AboutUs from './components/pages/AboutUs/Aboutus';
 import Admission from './components/pages/Admission/Admission';
-import OurTeam from './components/pages/OurTeam/OurTeam';
+import OurTeam from './components/pages/outTeam/OurTeam';
 import Blog from './components/pages/Blog/Blog';
 import Enroll from './components/pages/Enroll/Enroll-1';
 import Level from './components/ui/Enroll/Levels';
