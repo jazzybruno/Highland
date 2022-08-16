@@ -1,5 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import { Link } from 'react-router-dom'
 
 import '../Enroll-form-file/File.css'
 
@@ -92,8 +93,8 @@ function MotherDetails() {
                 {/* <input required name ="image" type="file" onChange={onChange} /> */}
             </div>
             <div className='file-buttons'>
-            <button className="enroll-back">Back</button>
-            <button className="enroll-next">Next</button>
+                <Link to="/enrollfa"><button className="enroll-back">Back</button></Link>
+                <Link to="/enrollreg"><button className="enroll-next">Next</button></Link>
 
             </div>
 

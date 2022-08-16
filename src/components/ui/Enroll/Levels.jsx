@@ -27,7 +27,7 @@ function Level() {
             <img src={connector} alt="connector" className='connector' />
             <div className='steps'>
                 <div className='step-container-3'>
-                    <Link to='/' className="step-number">3</Link>
+                    <Link to='/enrollfa' className="step-number">3</Link>
                 </div>
                 <div className='step-text'>
                     <p>Choose Level</p>

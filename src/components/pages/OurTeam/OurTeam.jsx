@@ -1,17 +1,12 @@
 import React from "react";
 // import { useState } from "react";
-<<<<<<< Updated upstream:src/components/pages/OurTeam/OurTeam.jsx
 import "../OurTeam/OurTeam.css";
 import "../AboutUs/About.css";
-import Layout from "../OurTeam/Layout";
 import team from "../../images/OurTeam/team-icon.png";
-=======
 import "./OurTeam.css";
 // import "../AboutUs/About.css";
 import Layout1 from "./Layout1";
 import Layout2 from "./Layout2"
-import team from "../../images/Contact/team.svg";
->>>>>>> Stashed changes:src/components/pages/outTeam/OurTeam.jsx
 import logo from "../../images/Landing/logo.svg";
 import search from "../../images/Landing/bx_search.svg";
 import slide1 from "../../images/Admission/admit.jpg";
@@ -26,14 +21,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
-
-<<<<<<< Updated upstream:src/components/pages/OurTeam/OurTeam.jsx
-=======
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'  
 import kebra from '../../images/Enroll/nicole.jpg'
 
->>>>>>> Stashed changes:src/components/pages/outTeam/OurTeam.jsx
 function OurTeam() {
   return (
     <div>

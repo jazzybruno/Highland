@@ -13,6 +13,10 @@ const addressContent = [
   { label: "Southern", value: 4 },
 ];
 
+const sectorContent = [
+    { label: ""}
+]
+
 function Address() {
     return(
         <div className="container">
@@ -58,7 +62,7 @@ function Address() {
                    <Link to="/enrollper"> <button type="submit" className='select-back-btn'>Back</button></Link>
                 </div>
                 <div className="col-md-2">
-                   <Link to="/enrollreg"> <button type="submit" className='select-next-btn'>Next</button></Link>
+                   <Link to="/enrollfa"> <button type="submit" className='select-next-btn'>Next</button></Link>
                 </div>
                 <div className="col-md-4"></div>
             </div>

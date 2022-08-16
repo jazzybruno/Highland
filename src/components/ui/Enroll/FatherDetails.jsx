@@ -1,9 +1,23 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import {Link} from 'react-router-dom';
 
 import '../Enroll-form-file/File.css'
 
 function FatherDetails() {
+
+    const { register,handleSubmit } = useForm();
+    const onChange = (e) => {
+       const file = e.target.files[0];
+
+    } ;
+    const onSubmit = data => {
+       const storageRef = app.storage().ref();
+       const fileRef = storageREf.child(data.image[0].name);
+       fileRef.put(data.image[0]).then(() => {
+           console.log("Uploaded file");
+       });
+    }
 
      const [formData,setFormData] = React.useState(
        {
@@ -81,8 +95,8 @@ function FatherDetails() {
                 {/* <input required name ="image" type="file" onChange={onChange} /> */}
             </div>
             <div className='file-buttons'>
-            <button className="enroll-back">Back</button>
-            <button className="enroll-next">Next</button>
+                <Link to="/enrollstudent"><button className="enroll-back">Back</button></Link>
+                <Link to="/enrollmo"><button className="enroll-next">Next</button></Link>
 
             </div>
 

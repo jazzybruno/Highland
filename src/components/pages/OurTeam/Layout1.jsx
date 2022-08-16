@@ -1,18 +1,9 @@
 import React from "react";
 // import { useState } from "react";
 import "../OurTeam/OurTeam.css";
-// import "../AboutUs/About.css";
-<<<<<<< Updated upstream:src/components/pages/OurTeam/Layout.jsx
-import Details from "../../ui/Details/details";
-import Image1 from "../../images/Admission/slide2.jpg";
-import Image2 from "../../images/Admission/slide3.jpg";
-import Image3 from "../../images/Admission/slide4.jpg";
-=======
-// import Details from "../../ui/Details/details";
 import Edward from '../../images/Enroll/principal.png'
 import Charles from '../../images/Enroll/charles.png'
 import John from '../../images/Enroll/john.png'
->>>>>>> Stashed changes:src/components/pages/OurTeam/Layout1.jsx
 
 
 function Layout1() {
