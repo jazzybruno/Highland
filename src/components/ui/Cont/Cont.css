@@ -16,14 +16,15 @@ font-size: 1.3em;
 
 }
 .contact-name{
-    /* margin-right: 2em; */
+  
     justify-content: center;
     align-items: center;
 }
 @media only screen and (max-width: 1000px) {
     .second-contact{
        
-        font-size: small;
+      
+        flex-direction: column;
         
     }
     .contact-form-details-map{
