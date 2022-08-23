@@ -6,8 +6,9 @@ body{
 
 body::-webkit-scrollbar {
   display: none;
+
 }
 
-a:hover {
+a:hover{
   color: white;
 }

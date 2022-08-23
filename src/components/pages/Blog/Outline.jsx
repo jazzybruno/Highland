@@ -1,5 +1,4 @@
 import React from 'react';
-// import Slider from '../../../assets/Slider';
 import './Blog.css'
 import {Link} from 'react-router-dom';
 import Service1 from '../../images/Admission/nursery.jpg';

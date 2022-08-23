@@ -41,7 +41,7 @@ const Form = ()=>{
                 
                 {/* the start of the form  */}
 
-                <div className='form-container'>
+                <div className='form-container-unique'>
                     <h3>Get in Touch</h3>
         <form className='register-form'>
             {submitted ? <div className='success-message'>Success! Thank you for registering</div>:null}

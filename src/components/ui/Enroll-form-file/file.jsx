@@ -1,5 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import {Link } from "react-router-dom"
 import './File.css'
 
 function file() {
@@ -73,14 +74,15 @@ function file() {
             
 
 
-            <p className='student-photo'>Student Photo</p>
+
+
             <div className="choose-file">
-            <input required name ="image" type="file" onChange={onChange} />
-            <button className='file-submit'>Submit</button>
+                <p className='student-photo'>Student Photo</p>
+                <input required name ="image" type="file" onChange={onChange} />
             </div>
             <div className='file-buttons'>
-            <button className="enroll-back">Back</button>
-            <button className="enroll-next">Next</button>
+            <Link to="/enroll"><button className="enroll-back">Back</button></Link>
+            <Link to="/enrollper"><button className="enroll-next">Next</button></Link>
 
             </div>
 
@@ -89,4 +91,6 @@ function file() {
   )
 }
 
-export default file
+
+export default file;
+

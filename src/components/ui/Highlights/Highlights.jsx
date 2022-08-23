@@ -25,6 +25,7 @@ function Highlights() {
   return (
     <div>
        
+
        <div className="second-details-title">
                 <div className="second-details-title-img"> <img src={tiltle} alt="" /></div>
                 <div className="second-details-title-text"> Highlights  </div>

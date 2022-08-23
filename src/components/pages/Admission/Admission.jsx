@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import {Link} from 'react-router-dom';
 import './Admission.css';
 import '../AboutUs/About.css';
 import Header from '../../ui/Header/Header';
@@ -88,7 +89,7 @@ const Admission = ()=>{
                <a href="/"> <img src={logo} alt="logo" /></a>
             </div>
             <div className="about-video-details-logo2">
-                <a href="about">ABOUT US</a>
+                <a href="about">ABOUT US</a>  
             </div>
             <div className="about-video-details-logo3">
             <a href="blog">BLOG</a>
@@ -186,7 +187,7 @@ the requirements to see the amount.</div>
 
                 </div>
                 <div className="application-section-enroll">
-                    <a href="#">ENROLL NOW</a>
+                    <Link to="/enroll"><a href="#">ENROLL NOW</a></Link>
                 </div>
               </div>
                   {/* the apply part ends here */}

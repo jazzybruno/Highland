@@ -1,3 +1,4 @@
+
 .second-details-title{
     font-family: 'Poppins', sans-serif;
     font-size: 32px;
@@ -26,6 +27,16 @@
 
 .second-details-title-text span{
  color: #3148A3;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    padding: 0.8em 53em;
+    
+}
+.head-sta{
+    padding-left: 20px;
+    font-size: 40px;
+    padding-top: 15px;
 }
 
 
@@ -33,14 +44,18 @@
     display: flex;
     justify-content: space-between;
     padding: 2em 13em;
+
     font-family: 'Quicksand';
+
 }
 .bottom-statistics{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1.1em 28em;
+
     font-family: 'Quicksand';
+
     
 }
 .bottom-statistics img{
@@ -53,8 +68,8 @@
     font-weight: 700;
     font-size: 3em;
     text-align: center;
-    /* padding-bottom: 15px; */
-    /* padding-top: 15px; */
+    padding-bottom: 15px;
+    padding-top: 15px;
 
 }
 .name-sta{

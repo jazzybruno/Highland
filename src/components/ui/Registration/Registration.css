@@ -3,8 +3,8 @@
     border:none;
     color: white;
     font-family: 'Quicksand';
-    padding: 20px;
-    font-size: 20px;
+    padding: 14px;
+    font-size: 14px;
     border-radius: 3px;
  
 } 
@@ -20,11 +20,25 @@
 .registration-body{
     font-family: 'Quicksand';
     /* border: 1px solid black; */
-    width: 38%;
 }
 .registration-head{
    font-weight: bolder;
    text-align: center;
+    margin-left: 16rem;
+    width: 34%;
+    font-size: 14px;
+}
+
+.registration-body > h2 {
+    font-size: 20px;
+    padding-bottom: 0.5em;
+}
+
+.registration-head{
+   font-weight: bolder;
+   text-align: center;
+   font-size: 24px;
+   padding-bottom: 0.5em;
 }
 .registration-para{
     font-weight: light;

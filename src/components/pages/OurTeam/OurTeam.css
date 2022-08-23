@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand';
+}
+
+.team-wrapper {
+    margin: 2rem;
+    display: flex;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+    /* border-bottom: 1px solid black; */
+}
+
+.team-card-img {
+    padding-bottom: 1em;
+    border-bottom: 1px solid black;
+}
+
+
+.team-titles{
+    margin-left: 2em;
+    
+}
+
+.blog-team-icon {
+    width: 100px;
+    padding-top: 2em;
+}
+
+
+.svg {
+    padding-bottom: 2em;
+}
+
+

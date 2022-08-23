@@ -2,9 +2,10 @@ import React from 'react';
 import './Enroll-1.css'
 import Heading from "../../ui/Enroll/Heading";
 import Level from '../../ui/Enroll/Levels';
-import ParentDetails from '../../ui/Enroll/ParentsDetails';
+import MotherDetails from '../../ui/Enroll/MotherDetails';
 
-function Adress() {
+function EnrollMother() {
+
     return (
         <div>
            <div className="main-container-enroll">
@@ -26,7 +27,8 @@ function Adress() {
 
                   {/* the lower right part start  */}
                   <div className="main-container-enroll-lower-right-part">  
-                     <ParentDetails />
+
+                     <MotherDetails />
                     </div>
                     {/* the lower right part end  */}
             </div>
@@ -37,4 +39,6 @@ function Adress() {
     )
 }
 
-export default Adress;
+
+export default EnrollMother;
+

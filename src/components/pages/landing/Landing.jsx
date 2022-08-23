@@ -1,3 +1,4 @@
+
 // import React from 'react';
 // import logo from '../../images/Landing/logo.svg';
 // import search from '../../images/Landing/bx_search.svg';
@@ -119,6 +120,7 @@
 // }
 
 // export default Landing
+
 import React from 'react';
 import logo from '../../images/Landing/logo.svg';
 import search from '../../images/Landing/bx_search.svg';
@@ -135,7 +137,6 @@ import "swiper/css"
 import "swiper/css/pagination"
 import "swiper/css/navigation"
 import "swiper/css/autoplay"
-
 import Second from '../../ui/second/Second';
 import Statistics from '../../ui/Statistics/Statistics';
 import Highlights from '../../ui/Highlights/Highlights';
@@ -227,15 +228,18 @@ function Landing() {
             </div>
             <div className="about-videos-navigate-description">Welcome To <span>HIGHLAND</span> School a model school located in Nyamata.</div>
             <div className="about-video-navigate-link">
+
                 <a href="#landing">Take A tour</a>
             </div>
         </div>
        </div>
        <section id='landing'>
+
        <Second/>
        <Statistics/>
        <Highlights/>
        <Footer />
+
 
        </section>
        
@@ -244,4 +248,5 @@ function Landing() {
   )
 }
 
-export default Landing
+export default Landing;
+

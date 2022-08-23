@@ -1,9 +1,11 @@
 import React from "react";
 // import { useState } from "react";
 import "./OurTeam.css";
-// import "../AboutUs/About.css";
-import Layout from "./Layout";
-import team from "../../images/Contact/team.svg";
+import "../AboutUs/About.css";
+import Layout1 from "../OurTeam/Layout1";
+import Layout2 from "../OurTeam/Layout2";
+import team from "../../images/OurTeam/team-icon.png";
+import nicole from "../../images/Enroll/nicole.jpg";
 import logo from "../../images/Landing/logo.svg";
 import search from "../../images/Landing/bx_search.svg";
 import slide1 from "../../images/Admission/admit.jpg";
@@ -18,9 +20,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
-
-// import 'bootstrap/dist/css/bootstrap.min.css'
-// import 'bootstrap/dist/js/bootstrap.bundle.min.js'  
 
 function OurTeam() {
   return (
@@ -71,28 +70,28 @@ function OurTeam() {
       {/* the contents on the swiper start/ */}
       <div className="about-video-details1">
         <div className="about-video-details-logo1">
-          <a href="#">
+          <a href="/#">
             {" "}
             <img src={logo} alt="logo" />
           </a>
         </div>
         <div className="about-video-details-logo2">
-          <a href="about">ABOUT US</a>
+          <a href="/about#">ABOUT US</a>
         </div>
         <div className="about-video-details-logo3">
-          <a href="blog">BLOG</a>
+          <a href="/blog#">BLOG</a>
         </div>
         <div className="about-video-details-logo4">
-          <a href="admission">ADMISSION</a>
+          <a href="/admission#">ADMISSION</a>
         </div>
         <div className="about-video-details-logo5">
-          <a href="team">OUR TEAM</a>
+          <a href="/team#">OUR TEAM</a>
         </div>
         <div className="about-video-details-logo6">
-          <a href="contact">CONTACT</a>
+          <a href="/contact#">CONTACT</a>
         </div>
         <div className="about-video-details-logo7">
-          <a href="#">
+          <a href="/search#">
             {" "}
             <img src={search} alt="" />
           </a>
@@ -105,15 +104,14 @@ function OurTeam() {
             <h3> OUR TEAM </h3>
           </div>
           <div className="about-videos-navigate-description">
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut
-            fring illa libero, nec sodales arcu“.
+            Highland's Teams Members
           </div>
           <div className="about-video-navigate-link">
-            <a href="#team">Details</a>
+            <a href="#ourteam">Details</a>
           </div>
         </div>
       </div>
-      <section className="text-center" id="team">
+      <section id="ourteam" className="text-center">
         <div className="svg">
           <img src={team} alt="team" className="blog-team-icon" />
           <h6 className=" team-title text-grey fw-light">HIGHLAND SCHOOL</h6>
@@ -128,25 +126,25 @@ function OurTeam() {
       </section>
       <div>
         <h2 className="team-titles">Leadership</h2>
-        <Layout />
+        <Layout1 />
       </div>
       <div>
         <h2 className="team-titles">Assistance</h2>
-        <Layout />
+        <Layout2 />
       </div>
-      <section className="container">
-        <div className="image-container w-25 mr-4">
-          <img src={slide4} alt="" className="img-fluid mb-4 pb-2 " />
+      <div className="team-wrapper">
+        <div className="team-card card-body ">
+          <img className="team-card-img img-fluid" src={nicole} alt="" />
+          <div className="team-card__body">
+            <h4 className="team-card__title">Nicole Kebra Munyaburanga</h4>
+            <h5>0786207426</h5>
+            <h6>Receptionist</h6>
+            <p className="team-card__description"></p>
+          </div>
         </div>
-        <div className="">
-          <h4>Edward Munyaburanga</h4>
-          <h4>0788237817</h4>
-          <h6>Principal</h6>
-        </div>
-      </section>
+      </div>
       <Footer />
     </div>
   );
 }
-
 export default OurTeam;

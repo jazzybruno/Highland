@@ -1,8 +1,8 @@
 import React from "react";
 // import { useState } from "react";
-import "./OurTeam.css";
+import "../OurTeam/OurTeam.css";
 // import "../AboutUs/About.css";
-// import Details from "../../ui/Details/details";
+import Details from "../../ui/Details/details";
 import Image1 from "../../images/Admission/slide2.jpg";
 import Image2 from "../../images/Admission/slide3.jpg";
 import Image3 from "../../images/Admission/slide4.jpg";
