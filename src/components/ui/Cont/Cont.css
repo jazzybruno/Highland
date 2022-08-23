@@ -20,3 +20,13 @@ font-size: 1.3em;
     justify-content: center;
     align-items: center;
 }
+@media only screen and (max-width: 1000px) {
+    .second-contact{
+       
+        font-size: small;
+        
+    }
+    .contact-form-details-map{
+        margin-bottom: 0%;
+    }
+  }

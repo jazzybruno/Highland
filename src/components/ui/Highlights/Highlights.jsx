@@ -29,7 +29,9 @@ function Highlights() {
                 <div className="second-details-title-img"> <img src={tiltle} alt="" /></div>
                 <div className="second-details-title-text"> Highlights  </div>
               </div>
-        
+        <div className='swiper-highlights'>
+
+       
         < Swiper 
                    slidesPerView={3}
                    effect
@@ -91,7 +93,7 @@ function Highlights() {
 
                   </Swiper>
                 {/* the image swiper end  */}
-             
+                </div>
 
     </div>
   )

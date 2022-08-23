@@ -48,3 +48,11 @@
     text-align: center;
 
 }
+@media only screen and (max-width: 950px){
+   .mission-container-description{
+    font-size: 15px;
+   }
+   .mission-contaier-title{
+    font-size: 25px;
+   }
+}
