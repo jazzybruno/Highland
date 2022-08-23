@@ -29,7 +29,7 @@ const App = ()=>{
 
         {/* <Route path='/admission/enroll' element={<ParentDetails />} /> */}
 
-        <Route path="/" element={<Navigation/>} />
+        <Route path="/" element={<Landing/>} />
 
           <Route path="/about" element={<AboutUs/>} />
           <Route path="/admission" element={<Admission/>} />
