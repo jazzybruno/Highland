@@ -5,7 +5,7 @@ import "../AboutUs/About.css";
 import Layout1 from "../OurTeam/Layout1";
 import Layout2 from "../OurTeam/Layout2";
 import team from "../../images/OurTeam/team-icon.png";
-import nicole from '../../images/Enroll/nicole.jpg'
+import nicole from "../../images/Enroll/nicole.jpg";
 import logo from "../../images/Landing/logo.svg";
 import search from "../../images/Landing/bx_search.svg";
 import slide1 from "../../images/Admission/admit.jpg";
@@ -104,7 +104,7 @@ function OurTeam() {
             <h3> OUR TEAM </h3>
           </div>
           <div className="about-videos-navigate-description">
-           Highland's Teams Members
+            Highland's Teams Members
           </div>
           <div className="about-video-navigate-link">
             <a href="#ourteam">Details</a>
@@ -132,16 +132,17 @@ function OurTeam() {
         <h2 className="team-titles">Assistance</h2>
         <Layout2 />
       </div>
-      <section className="team-section-details">
-        <div className="image-container">
-          <img src={nicole} alt="" className="img-fluid mb-4 pb-2" />
+      <div className="team-wrapper">
+        <div className="team-card card-body ">
+          <img className="team-card-img img-fluid" src={nicole} alt="" />
+          <div className="team-card__body">
+            <h4 className="team-card__title">Nicole Kebra Munyaburanga</h4>
+            <h5>0786207426</h5>
+            <h6>Receptionist</h6>
+            <p className="team-card__description"></p>
+          </div>
         </div>
-        <div className="text-center">
-          <h4>Nicole Kebra Munyaburanga</h4>
-          <h4>0786207426</h4>
-          <h6>Academics Coordinator</h6>
-        </div>
-      </section>
+      </div>
       <Footer />
     </div>
   );

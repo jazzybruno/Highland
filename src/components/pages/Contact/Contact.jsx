@@ -22,7 +22,6 @@ import "swiper/css/autoplay"
 function Contact() {
   return (
     <div>
-             <Header ></Header>
              <div className="orientation1"></div>
             <div className="admission-container">
            

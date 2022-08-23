@@ -18,13 +18,16 @@ import Register from './components/pages/Enroll/Enroll-R';
 import EnrollStudent from './components/pages/Enroll/Enroll-S'
 import EnrollForm from './components/pages/Enroll/Enroll-MS';
 import {BrowserRouter , Route , Routes} from 'react-router-dom';
-
+import Layout1 from './components/pages/OurTeam/Layout1';
 
 const App = ()=>{
-  return (    <div>
+  return (    
+    <div>
  
       <BrowserRouter>
         <Routes> 
+
+
         {/* <Route path='/admission/enroll' element={<ParentDetails />} /> */}
 
         <Route path="/" element={<Landing/>} />
@@ -34,9 +37,7 @@ const App = ()=>{
           <Route path="/contact" element={<Contact/>} />
           <Route path="/blog" element={<Blog/>} />
           <Route path="/team" element={<OurTeam/>} />
-          <Route path="/enroll" element={<Enroll/>} />
-        <Route path="/" element={<Landing/>} />
-          <Route path="/enroll" element={<Enroll />} />
+          <Route path="/enroll" element={<Enroll/>} />234r
           <Route path="/enrollstudent" element={<EnrollStudent />} />
           <Route path="/enrollper" element={<EnrollForm />} />
           <Route path="/enrollad" element={<Adress />} />
