@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../ui/Header/Header";
 import Footer from "../../ui/Footer/Footer";
 import Gallery from "../Blog/Gallery";
+import Navbar from "../../ui/Navbar/Navbar"
 import { Link } from "react-router-dom";
 import tiltle from '../../images/About/title.svg'
 import Outline from "../Blog/Outline";
@@ -78,33 +79,7 @@ function Blog() {
         </div>
         {/* the contents on the swiper start/ */}
         <div className="about-video-details1">
-          <div className="about-video-details-logo1">
-            <a href="/">
-              {" "}
-              <img src={logo} alt="logo" />
-            </a>
-          </div>
-          <div className="about-video-details-logo2">
-            <a href="about">ABOUT US</a>
-          </div>
-          <div className="about-video-details-logo3">
-            <a href="blog">BLOG</a>
-          </div>
-          <div className="about-video-details-logo4">
-            <a href="admission">ADMISSION</a>
-          </div>
-          <div className="about-video-details-logo5">
-            <a href="team">OUR TEAM</a>
-          </div>
-          <div className="about-video-details-logo6">
-            <a href="contact">CONTACT</a>
-          </div>
-          <div className="about-video-details-logo7">
-            <a href="#">
-              {" "}
-              <img src={search} alt="" />
-            </a>
-          </div>
+            <Navbar />
         </div>
 
         <div className="about-videos-navigate-container1">
