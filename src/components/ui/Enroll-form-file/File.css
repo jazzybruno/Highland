@@ -70,3 +70,23 @@
     height: 40px;
     border-radius: 5%;
 }
+@media only screen and (max-width: 1000px) {
+    .file-inputs{
+       
+        
+        width: 90%;
+      
+    }
+    .file-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 30px;
+    } 
+    .enroll-next{
+        margin-right: 25px;
+    }
+   
+    
+   
+  }

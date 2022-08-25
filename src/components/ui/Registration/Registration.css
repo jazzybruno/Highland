@@ -24,9 +24,11 @@
 .registration-head{
    font-weight: bolder;
    text-align: center;
-    margin-left: 16rem;
-    width: 34%;
-    font-size: 14px;
+    /* margin-left: 16rem; */
+    justify-content: center;
+    
+    /* width: 34%; */
+    font-size: 20px;
 }
 
 .registration-body > h2 {
@@ -45,4 +47,19 @@
     /* color: #59AADB; */
   
 }
+@media only screen and (max-width: 1000px) {
+    .registration-body{
+        font-size: small;
+        padding-left: 30px;
+      
+    }
+    .registration-head{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+   
+    
+   
+  }
 

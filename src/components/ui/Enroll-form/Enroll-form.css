@@ -13,9 +13,10 @@ align-items: center;
  
     
 }
-.form-container h3{
+.enroll-form-header{
     text-align: center;
     justify-content: center;
+    
 
 }
 .right-form input::placeholder{
@@ -69,8 +70,10 @@ align-items: center;
     color: white;
     height: 40px;
     border-radius: 5%;
-    justify-content: end;
-    align-self: flex-end;
+   
+
+     justify-content: end; 
+     align-self: flex-end; 
 
 }
 .enroll-form-back {
@@ -86,6 +89,33 @@ align-items: center;
 
 .enroll-form-header {
     text-align: center;
-    margin-left: 12em;
+    margin-left: 5em;
+    margin-bottom: 1em;
 }
+@media only screen and (max-width: 1000px) {
+    .right-form input{
+        width: 150px;
+       
+        /* font-size: 10px; */
+        
+    }
+    .left-form input{
+        width: 150px;
+    }
+    .form-container{
+        margin-left: 5%;
+       
+    }
+    .enroll-form-header{
+        justify-content: center;
+        align-items: center;
+        margin-left: 0%;
+      
+        
+        
+        
+
+    }
+  }
+  
 
