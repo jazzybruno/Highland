@@ -31,9 +31,9 @@ function Gallery() {
               </div>
         
         < Swiper 
-                   slidesPerView={3}
+                   slidesPerView={1}
                    effect
-                   spaceBetween={30}
+                   spaceBetween={10}
                    loop={true}
                    pagination={{
                      clickable: true
@@ -42,49 +42,64 @@ function Gallery() {
                      autoplay={{delay: 3000, disableOnInteraction: false}}
                      
                      modules={[Pagination, Navigation , Autoplay , EffectFade]}
-                     className="admission-swiper-container"
+                     className="gallery-swiper-container"
+
+                     breakpoints={{
+                        640: {
+                          slidesPerView: 2,
+                          spaceBetween: 20,
+                        },
+                        768: {
+                          slidesPerView: 3,
+                          spaceBetween: 30,
+                        },
+                        1024: {
+                           slidesPerView: 4,
+                           spaceBetween: 40,
+                        },
+                      }}
                      >
 
                          <SwiperSlide> 
-                            <div className="swiper-image">
+                            <div className="gallery-swiper-image">
                             <img src={slide1} alt="" />
                             </div>
                          </SwiperSlide>
 
                          <SwiperSlide> 
-                            <div className="swiper-image">
+                            <div className="gallery-swiper-image">
                             <img src={slide2} alt="" />
                             </div>
                          </SwiperSlide>
 
                          <SwiperSlide> 
-                            <div className="swiper-image">
+                            <div className="gallery-swiper-image">
                             <img src={slide3} alt="" />
                             </div>
                          </SwiperSlide>
 
                          <SwiperSlide> 
-                            <div className="swiper-image">
+                            <div className="gallery-swiper-image">
                             <img src={slide4} alt="" />
                             </div>
                          </SwiperSlide>
                          <SwiperSlide> 
-                            <div className="swiper-image">
+                            <div className="gallery-swiper-image">
                             <img src={swiper1} alt="" />
                             </div>
                          </SwiperSlide>
                          <SwiperSlide> 
-                            <div className="swiper-image">
+                            <div className="gallery-swiper-image">
                             <img src={swiper2} alt="" />
                             </div>
                          </SwiperSlide>
                          <SwiperSlide> 
-                            <div className="swiper-image">
+                            <div className="gallery-swiper-image">
                             <img src={swiper3} alt="" />
                             </div>
                          </SwiperSlide>
                          <SwiperSlide> 
-                            <div className="swiper-image">
+                            <div className="gallery-swiper-image">
                             <img src={swiper4} alt="" />
                             </div>
                          </SwiperSlide>

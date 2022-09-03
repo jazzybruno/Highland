@@ -1,7 +1,7 @@
 import React from 'react';
 import Select from 'react-select';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import '../Enroll-form-file/file.css'
 import './Levels.css';
 import {Link} from 'react-router-dom';
 
@@ -56,16 +56,13 @@ function Address() {
                 </div>
                 <div className="col-md-4"></div>
             </div>
-            <div className='row mt-4'>
-                <div className="col-md-4"></div>
-                <div className="col-md-3">
-                   <Link to="/enrollper"> <button type="submit" className='select-back-btn'>Back</button></Link>
-                </div>
-                <div className="col-md-2">
-                   <Link to="/enrollfa"> <button type="submit" className='select-next-btn'>Next</button></Link>
-                </div>
-                <div className="col-md-4"></div>
+            {/* <div className='address-nav-btns row mt-4'> */}
+            <div className='file-buttons mt-4'>
+                <Link to="/enrollper"><button className="enroll-back">Back</button></Link>
+                <Link to="/enrollfa"><button className="enroll-next">Next</button></Link>
+
             </div>
+            {/* </div> */}
         </div>
     );
 } 

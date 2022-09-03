@@ -51,7 +51,7 @@
 }
 
 .step-text > p {
-    margin-top: 12px;
+    padding-top: 12px;
     padding-left: 12px;
 }
 
@@ -74,7 +74,7 @@
 
 .choose-level-title {
     font-family: 'Quicksand';
-    margin-bottom: 3em;
+    /* margin-bottom: 3em; */
 }
 
 .enroll-class-btn {
@@ -124,3 +124,24 @@
     justify-content: end;
     align-self: flex-end;
 }
+
+/* @media screen and (max-width: 1200px) {
+    .select-back-btn, .select-next-btn {
+        width: 100%;
+        margin-top: 1em;
+    }
+    .step-container-1, .step-container-2, .step-container-3{
+        width: 60%;
+        border-radius: 50%;
+        text-align: center;
+    
+    }
+    .step-text > p {
+        text-align: center;
+        font-size: smaller;
+    }
+
+    .all-levels-container {
+        margin-top: 2em;
+    }
+} */

@@ -18,8 +18,7 @@ import Register from './components/pages/Enroll/Enroll-R';
 import EnrollStudent from './components/pages/Enroll/Enroll-S'
 import EnrollForm from './components/pages/Enroll/Enroll-MS';
 import {BrowserRouter , Route , Routes} from 'react-router-dom';
-import Layout1 from './components/pages/OurTeam/Layout1';
-
+import Navigation from './components/ui/Navbar/Navbar';
 const App = ()=>{
   return (    
     <div>
@@ -30,7 +29,7 @@ const App = ()=>{
 
         {/* <Route path='/admission/enroll' element={<ParentDetails />} /> */}
 
-        <Route path="/" element={<Landing/>} />
+        <Route path="/" element={<Navigation/>} />
 
           <Route path="/about" element={<AboutUs/>} />
           <Route path="/admission" element={<Admission/>} />
