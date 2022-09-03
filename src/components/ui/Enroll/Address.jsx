@@ -1,7 +1,7 @@
 import React from 'react';
 import Select from 'react-select';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../Enroll-form-file/file.css'
+import '../Enroll-form-file/File.css'
 import './Levels.css';
 import {Link} from 'react-router-dom';
 
