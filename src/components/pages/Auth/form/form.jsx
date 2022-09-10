@@ -2,7 +2,8 @@ import React from "react";
 import { useState } from "react";
 import "./form.css";
 import tiltle from '../../images/About/title.svg'
-import axios from 'axios'
+import axios from "axios";
+
 
 const Form = ()=>{
 
@@ -10,40 +11,50 @@ const Form = ()=>{
         baseURL: "https://highland-backend.herokuapp.com/"
     })
 
-    const [name , setName] = useState("")
-    const [phone , setPhone] = useState("")
-    const [email , setEmail] = useState("")
-    const [subject , setSubject] = useState("")
-    const [message , setMessage] = useState("")
-    const [status , setStatus] = useState("")
-    const [classname , setClassname] = useState("")
-    const[submitted,setSubmitted] = useState(false);
-
-
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [subject, setSubject] = useState("");
+    const [content, setcontent] = useState("");
+     const [message , setMessage] = useState("")
+     
      const handleFormSubmit = (event) => {
          event.preventDefault();
-         const formData = {
-        name,
-        phone,
-        email,
-        subject,
-        message
-         }
          setSubmitted(true);
 
-         api.post("/contact" , formData)
-         .then((res)=>{
-            setStatus("The message was sent successfull")
-            setClassname("success-message")
-         })
-         .catch((err)=>{
-            console.log(err);
-            setStatus("The message was not sent successfull")
-            setClassname("failure-message")
+         const values = {
+            name : name,
+            email : email,
+            phone : phone,
+            subject : subject,
+            message : content
+         }
+         
+     api.post("/contact", values)
+     .then(res => {
+            console.log(res);
+            console.log(res.data.message);
+            setMessage(res.data.message)
+     })
+     .catch(err => {
+        console.log(err.response.data.message);
+        setMessage(err.response.data.message)
+     })
+
+     setEmail("");
+        setName("");
+        setPhone("");
+        setSubject("");
+        setcontent("");
+     };
+     const[submitted,setSubmitted] = useState(false);
+     const handleChange = (event) => {
+         setValues({
+             ...values,
+             [event.target.name] : event.target.value,
          })
      };
-     
-    
+
     return(
         <div className="contact-form">
             <div className="contact-form-header"> 
@@ -61,10 +72,10 @@ const Form = ()=>{
                 
                 {/* the start of the form  */}
 
-                <div className='form-container-unique'>
+                <div className='form-container'>
                     <h3>Get in Touch</h3>
         <form className='register-form'>
-            {submitted ? <div className={classname}>{status}</div>:null}
+            {submitted ? <div className='success-message'>{message}</div>:null}
         {/* <img src={name} alt="call"  className='form-svg'/> */}
             
             {/* the first 2 inputs are for the name and number */}
@@ -75,11 +86,7 @@ const Form = ()=>{
             className='form-name'
             placeholder='Your name'
             name='name'
-            onChange={
-                (e)=>{
-                setName(e.target.value)
-                }
-            }
+            onChange={(e)=>{ setName(e.target.value) }}
             />
             {/* <img src={call} alt="call"  className='form-svg'/> */}
             <input
@@ -87,11 +94,7 @@ const Form = ()=>{
             className='form-number'
             placeholder='Telephone number'
             name='number'
-            onChange={
-                (e)=>{
-                setPhone(e.target.value)
-                }
-            }
+            onChange={(e)=>{setPhone(e.target.value)}}
             />
                      </div>
             {/* the first 2 inputs are for the name and number */}
@@ -103,11 +106,7 @@ const Form = ()=>{
             className='form-field'
             placeholder='Email address'
             name='mail'
-            onChange={
-                (e)=>{
-                setEmail(e.target.value)
-                }
-            }
+            onChange={(e)=>{setEmail(e.target.value)}}
             /><br/>
             {/* <img src={subject} alt="call"  className='form-svg'/> */}
             <input
@@ -115,23 +114,15 @@ const Form = ()=>{
             className='form-field'
             placeholder='Subject'
             name='subject'
-            onChange={
-                (e)=>{
-                setSubject(e.target.value)
-                }
-            }
+            onChange={(e)=>{setSubject(e.target.value)}}
             /><br/>
              {/* <img src={message} alt="call"  className='form-svgg'/> */}
             <textarea
-            value={message}
+            value={content}
             className='form-field-textarea'
             placeholder='Your message'
             name='message'
-            onChange={
-                (e)=>{
-                setMessage(e.target.value)
-                }
-            }
+            onChange={(e)=>{setcontent(e.target.value)}}
             /><br/>
             <div className="form-button-submit-container">
                 <button className='form-button-submit' onClick={handleFormSubmit}>Submit</button>
