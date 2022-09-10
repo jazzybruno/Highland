@@ -1,0 +1,54 @@
+.main-form-start{
+    width: screen;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-form-start-forms{
+    display: block;
+}
+
+.main-form-start-forms p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.main-form-start-forms form{
+    display: block;
+    margin-top: 10px;
+}
+
+.main-form-start-forms form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.main-form-start-forms form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.submit-button-highland{
+    color: white;
+    background: rgba(15, 99, 209, 0.767);
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    border: none !important;
+}
+
+.main-message-validation{
+    color: red;
+    text-align: center;
+}

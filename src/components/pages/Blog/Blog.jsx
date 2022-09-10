@@ -1,8 +1,7 @@
-import React from "react";
+import React , {useState , useEffect} from "react";
 import Header from "../../ui/Header/Header";
 import Footer from "../../ui/Footer/Footer";
 import Gallery from "../Blog/Gallery";
-import Navbar from "../../ui/Navbar/Navbar"
 import { Link } from "react-router-dom";
 import tiltle from '../../images/About/title.svg'
 import Outline from "../Blog/Outline";
@@ -18,18 +17,34 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
-
+import axios from "axios";
 
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
-import Highlights from "../../ui/Highlights/Highlights";
-
-
-
-
 
 function Blog() {
+  const [posts , SetPosts] = useState([])
+
+    const api = axios.create({
+        baseURL: 'https://highland-backend.herokuapp.com/'
+    })
+
+    const getPosts = () => {
+        api.get('/post')
+        .then(res => {
+            SetPosts(res.data)
+            console.log(res.data);
+        }).catch(err => {
+            console.log(err)
+        }
+        )
+    }
+
+    useEffect(() => {
+        getPosts()
+    }, [])
+
   return (
     <div className="blog-container">
       <div className="landing">
@@ -79,7 +94,33 @@ function Blog() {
         </div>
         {/* the contents on the swiper start/ */}
         <div className="about-video-details1">
-            <Navbar />
+          <div className="about-video-details-logo1">
+            <a href="/">
+              {" "}
+              <img src={logo} alt="logo" />
+            </a>
+          </div>
+          <div className="about-video-details-logo2">
+            <a href="about">ABOUT US</a>
+          </div>
+          <div className="about-video-details-logo3">
+            <a href="blog">BLOG</a>
+          </div>
+          <div className="about-video-details-logo4">
+            <a href="admission">ADMISSION</a>
+          </div>
+          <div className="about-video-details-logo5">
+            <a href="team">OUR TEAM</a>
+          </div>
+          <div className="about-video-details-logo6">
+            <a href="contact">CONTACT</a>
+          </div>
+          <div className="about-video-details-logo7">
+            <a href="#">
+              {" "}
+              <img src={search} alt="" />
+            </a>
+          </div>
         </div>
 
         <div className="about-videos-navigate-container1">
@@ -92,7 +133,6 @@ function Blog() {
             </div>
             <div className="about-video-navigate-link">
               <a href="#blog">Details</a>
-
             </div>
           </div>
         </div>
@@ -113,9 +153,14 @@ function Blog() {
           </div>
         </div>
       </section>
-      <Outline />
-      <Outline />
-      <Outline />
+  
+      <div className="main-div-blogs-posts">
+        {posts.map(post => {
+          return (
+            <Outline photo={post.photo} label={post.title} description={post.content} />
+          )
+        })}
+      </div>
 
       <section>
         <div>

@@ -27,6 +27,12 @@
     border-bottom: 1px solid black;
 }
 
+.main-div-blogs-posts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .about-video-details1 {
     align-items: center;
     justify-content: space-between;
