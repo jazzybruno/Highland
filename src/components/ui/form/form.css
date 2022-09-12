@@ -138,6 +138,7 @@
 @media only screen and (max-width: 1000px) {
     .contact-form-details{
         flex-direction: column;
+        justify-self: unset;
         /* font-size: 10px; */
         
     }

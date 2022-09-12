@@ -161,6 +161,10 @@
     margin-bottom: 20px;
 }
 
+.about-videos-navigate-description{
+    text-align: center;
+}
+
 .information-details-container{
     display: flex;
     flex-direction: row;
@@ -170,6 +174,7 @@
     margin-top: 50px;
 }
 @media only screen and (max-width: 1000px) {
+
     .information-details-container{
         flex-direction: column;
       
