@@ -17,7 +17,7 @@
 
 .post-container{
     background: white;
-    width: 80%;
+    width: 50%;
     margin-top: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -39,7 +39,7 @@
     border-radius: 10px;
     object-fit: cover;
 }
-v 
+
 .post-title{
     text-align: center;
     margin-top: 5px;
@@ -49,6 +49,7 @@ v
     font-size: 24px;
     font-weight: bold;
     color: #000;
+    text-align: center;
 }
 
 .post-content{
