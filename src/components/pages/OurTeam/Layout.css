@@ -11,6 +11,7 @@ body {
 .team-wrapper {
     margin: 2rem;
     display: flex;
+    flex-direction: row;
     gap: 1rem;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -21,4 +22,19 @@ body {
 .team-card-img {
     padding-bottom: 1em;
     border-bottom: 1px solid black;
+}
+
+
+@media only screen and (max-width: 700px) {
+   
+.team-wrapper {
+    margin: 2rem;
+    display: flex;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+     
 }

@@ -20,6 +20,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
+import NavBar from "../../ui/Navbar/Navbar";
 
 function OurTeam() {
   return (
@@ -97,6 +98,10 @@ function OurTeam() {
           </a>
         </div>
       </div>
+
+      <div className='about-responsive-div'>
+        <NavBar />
+        </div>
 
       <div className="about-videos-navigate-container1">
         <div className="about-video-navigate">
