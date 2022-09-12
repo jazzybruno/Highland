@@ -25,15 +25,22 @@ import Post from './components/pages/Auth/pages/Posts/Posts';
 import NewPost from './components/pages/Auth/pages/Posts/newPost';
 import Contact1 from './components/pages/Auth/pages/Contact/contact';
 import ProtectedRoutes from "./protectedRoutes";
+import logo from "./components/images/About/logo.svg"
+import { ColorRing } from "react-loader-spinner";
+import './App.css'
 
 const App = () => {
   const isLogged = ProtectedRoutes()
+  const [isLoaded , setIsLoaded] = React.useState(false)
+  window.addEventListener('load', () => {
+    setIsLoaded(true)
+  })
+
   return (
     <div>
-      <BrowserRouter>
+      {isLoaded ? <BrowserRouter>
         <Routes>
           {/* <Route path='/admission/enroll' element={<ParentDetails />} /> */}
-          {/* <Route path="/" element={<Navigation />} /> */}
           <Route path="/" element={<Landing/>}></Route>
           <Route path="/about" element={<AboutUs />} />
           <Route path="/admission" element={<Admission />} />
@@ -57,7 +64,19 @@ const App = () => {
           {/* the protected routes  */}
 
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> : <div className="loader-to-bring-images">
+      <ColorRing
+  visible={true}
+  height="80"
+  width="80"
+  ariaLabel="blocks-loading"
+  wrapperStyle={{}}
+  wrapperClass="blocks-wrapper"
+  colors={['#3148a3' , '#3148a3' , '#3148a3' , '#3148a3' , '#3148a3' ,  ]}
+/>
+      </div>}
+      
+      
     </div>
   );
 };
