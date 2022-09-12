@@ -17,6 +17,7 @@ import "swiper/css/autoplay";
 import Achievements from "../../ui/Achievement/Achievement";
 import { Pagination, Navigation , Autoplay , EffectFade  } from "swiper";
 import Edward from '../../images/About/principal.svg'
+import NavBar from "../../ui/Navbar/Navbar";
 
 
 const AboutUs = () => {
@@ -93,6 +94,10 @@ const AboutUs = () => {
             <div className="about-video-details-logo7">
             <a href="#"> <img src={search} alt="" /></a>
             </div>
+        </div>
+
+        <div className='about-responsive-div'>
+        <NavBar />
         </div>
 
        <div className="about-videos-navigate-container">

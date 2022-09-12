@@ -18,6 +18,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import axios from "axios";
+import NavBar from "../../ui/Navbar/Navbar";
 
 
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -121,6 +122,10 @@ function Blog() {
               <img src={search} alt="" />
             </a>
           </div>
+        </div>
+
+        <div className='about-responsive-div'>
+        <NavBar />
         </div>
 
         <div className="about-videos-navigate-container1">

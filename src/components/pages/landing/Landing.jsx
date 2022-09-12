@@ -140,7 +140,7 @@ import "swiper/css/autoplay"
 import Second from '../../ui/second/Second';
 import Statistics from '../../ui/Statistics/Statistics';
 import Highlights from '../../ui/Highlights/Highlights';
-
+import NavBar from '../../ui/Navbar/Navbar';
  
 
 
@@ -219,6 +219,10 @@ function Landing() {
             <div className="about-video-details-logo7">
             <a href="#"> <img src={search} alt="" /></a>
             </div>
+        </div>
+        
+        <div className='about-responsive-div'>
+        <NavBar />
         </div>
 
        <div className="about-videos-navigate-container1">

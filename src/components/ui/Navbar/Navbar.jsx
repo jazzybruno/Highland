@@ -4,7 +4,7 @@ import './Navbar.css';
 import search from "../../images/About/search.svg"
 import logo from "../../images/About/logo.svg"
 
-function Navigation() {
+function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="Navbar">
@@ -24,4 +24,4 @@ function Navigation() {
   );
 };
 
-export default Navigation;
+export default NavBar;

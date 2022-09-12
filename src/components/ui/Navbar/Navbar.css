@@ -3,8 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
+    /* position: absolute; */
+    width: 100%;
 }
 
 .Navbar > .nav-logo {
@@ -18,8 +18,8 @@
     position: relative;
     opacity: 0.9;
     font-family: 'Quicksand';
-    color: black;
-    margin: 4em;
+    color: white;
+    margin: 1.5em;
 }
 
 .Navbar > .nav-items > a:hover {
