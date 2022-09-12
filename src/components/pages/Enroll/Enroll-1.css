@@ -73,5 +73,11 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-        }
+}
+
+@media screen and (max-width: 980px) {
+    .main-container-enroll-lower-left-part {
+        flex-direction: column;
+    }
+}
 

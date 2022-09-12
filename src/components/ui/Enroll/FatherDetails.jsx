@@ -95,7 +95,7 @@ function FatherDetails() {
                 {/* <input required name ="image" type="file" onChange={onChange} /> */}
             </div>
             <div className='file-buttons'>
-                <Link to="/enrollstudent"><button className="enroll-back">Back</button></Link>
+                <Link to="/enrollad"><button className="enroll-back">Back</button></Link>
                 <Link to="/enrollmo"><button className="enroll-next">Next</button></Link>
 
             </div>

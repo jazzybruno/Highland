@@ -21,12 +21,12 @@
 }
 
 
-.form-container-unique h3{
+.form-container h3{
     text-align: center;
     font-family: Quicksand;
 }
 
-.form-container-unique{
+.form-container{
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -95,14 +95,6 @@
     text-align: center;
 }
 
-.failure-message{
-    color: white;
-    background-color: #db5975;
-    margin: 1em;
-    padding: 1em;
-    text-align: center;
-}
-
 .first-contact-inputs{
     display: flex;
     width: 100%;
@@ -134,23 +126,3 @@
     justify-content: center;
     margin-top: 10px;
 }
-
-@media only screen and (max-width: 1000px) {
-    .contact-form-details{
-        flex-direction: column;
-        /* font-size: 10px; */
-        
-    }
-  }
-  @media only screen and (max-width: 1000px) {
-    .register-form{
-       
-        width: 350px;
-
-        
-    }
-    .form-container{
-        margin-top: 35px;
-    }
-  }
-

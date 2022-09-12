@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState , useEffect} from "react";
 import Header from "../../ui/Header/Header";
 import Footer from "../../ui/Footer/Footer";
 import Gallery from "../Blog/Gallery";
@@ -17,18 +17,34 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
-
+import axios from "axios";
 
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
-import Highlights from "../../ui/Highlights/Highlights";
-
-
-
-
 
 function Blog() {
+  const [posts , SetPosts] = useState([])
+
+    const api = axios.create({
+        baseURL: 'https://highland-backend.herokuapp.com/'
+    })
+
+    const getPosts = () => {
+        api.get('/post')
+        .then(res => {
+            SetPosts(res.data)
+            console.log(res.data);
+        }).catch(err => {
+            console.log(err)
+        }
+        )
+    }
+
+    useEffect(() => {
+        getPosts()
+    }, [])
+
   return (
     <div className="blog-container">
       <div className="landing">
@@ -117,7 +133,6 @@ function Blog() {
             </div>
             <div className="about-video-navigate-link">
               <a href="#blog">Details</a>
-
             </div>
           </div>
         </div>
@@ -138,9 +153,14 @@ function Blog() {
           </div>
         </div>
       </section>
-      <Outline />
-      <Outline />
-      <Outline />
+  
+      <div className="main-div-blogs-posts">
+        {posts.map(post => {
+          return (
+            <Outline photo={post.photo} label={post.title} description={post.content} />
+          )
+        })}
+      </div>
 
       <section>
         <div>

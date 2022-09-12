@@ -62,7 +62,7 @@ function Contact() {
 
                          <SwiperSlide> 
                             <div className="swiper-images">
-                            <img src={slide4} alt="" />
+                            <img src={slide4} alt=""  />
                             </div>
                          </SwiperSlide>
 
