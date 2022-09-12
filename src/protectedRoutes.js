@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import JwtDecode from 'jwt-decode'
 import { useEffect } from "react";
 
 const useAuth = () => {
@@ -14,10 +13,7 @@ const useAuth = () => {
     if(!token){
         return user.loggedin = false
     }
-     const userData =  JwtDecode(token)
-     if(userData === {}){
-        user.loggedin = false
-     }
+     
     return user && user.loggedin
 }
 
