@@ -161,6 +161,10 @@
     margin-bottom: 20px;
 }
 
+.about-videos-navigate-description{
+    text-align: center;
+}
+
 .information-details-container{
     display: flex;
     flex-direction: row;
@@ -169,3 +173,27 @@
     align-items: center;
     margin-top: 50px;
 }
+@media only screen and (max-width: 1000px) {
+
+    .information-details-container{
+        flex-direction: column;
+      
+    }
+    .application-process-container-desc{
+        /* font-size: 10px; */
+        text-align: center;
+    }
+    .application-process-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .admission-fees-sructure-container{
+        flex-direction: column;
+       margin: auto;
+        /* justify-content: center; */
+        /* display: flex; */
+      
+        align-items: center;
+    }
+  }

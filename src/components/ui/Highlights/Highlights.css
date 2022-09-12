@@ -47,6 +47,11 @@
     height: 90%;
     object-fit: cover;
 }
+@media only screen and (max-width: 1000px) {
+    .swiper-highlights{
+        /* font-size: 15px; */
+        display: inline;
+        
 
 
   @media screen and (min-width: 640px) {

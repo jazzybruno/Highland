@@ -36,7 +36,7 @@ function OurTeam() {
           pagination={{
             clickable: true,
           }}
-          navigation={true}
+          navigation={false}
           autoplay={{ delay: 2000, disableOnInteraction: false }}
           modules={[Pagination, Navigation, Autoplay, EffectFade]}
           className="admission-swiper-container"

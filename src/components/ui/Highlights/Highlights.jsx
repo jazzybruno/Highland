@@ -43,7 +43,6 @@ function Highlights() {
         </div>
         <div className="second-details-title-text"> Highlights </div>
       </div>
-
       <Swiper
 
         slidesPerView={1}
@@ -53,14 +52,14 @@ function Highlights() {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        navigation={false}
+        autoplay={{ delay: 1000, disableOnInteraction: false }}
         modules={[Pagination, Navigation, Autoplay, EffectFade]}
         className="admission-swiper-container"
         
         breakpoints={{
          640: {
-           slidesPerView: 2,
+           slidesPerView: 2   ,
            spaceBetween: 20,
          },
          768: {

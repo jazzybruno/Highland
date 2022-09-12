@@ -37,3 +37,9 @@
     }
         
   }
+  @media only screen and (max-width: 900px) {
+    .value-conatainer-text{
+      font-size: 20px;
+    }
+        
+  }

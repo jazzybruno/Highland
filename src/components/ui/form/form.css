@@ -134,3 +134,24 @@
     justify-content: center;
     margin-top: 10px;
 }
+
+@media only screen and (max-width: 1000px) {
+    .contact-form-details{
+        flex-direction: column;
+        justify-self: unset;
+        /* font-size: 10px; */
+        
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .register-form{
+       
+        width: 350px;
+
+        
+    }
+    .form-container{
+        margin-top: 35px;
+    }
+  }
+

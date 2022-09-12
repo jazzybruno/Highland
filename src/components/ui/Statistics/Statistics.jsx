@@ -44,7 +44,7 @@ function statistics() {
             <div className='no-statistics'>1</div>
             <p className='name-sta'>Office location</p>
          </div>
-         <div>
+         <div className='student-static'>
             <img  src={students} alt =""/>
             <div className='no-statistics'>183</div>
             <p className='name-sta'>Students</p>

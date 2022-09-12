@@ -36,7 +36,7 @@ export default function Enrollform() {
     
     return (
 
-        <div>1
+        <div className="enroll-form-body">
             <h3 className='enroll-form-header'>Personal Details</h3>
             <form className="form-container">
 
