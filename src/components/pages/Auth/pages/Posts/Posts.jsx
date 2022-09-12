@@ -113,7 +113,7 @@ const Post = () => {
                         </p>
                     </div>
                     <div className="post-actions">
-                        <button className='button-edit-post'>Edit</button>
+                        {/* <button className='button-edit-post'>Edit</button> */}
                         <button className='button-delete-post' onClick={()=>{
                             return deleteHandler(post._id)
                         }}>Delete</button>

@@ -21,8 +21,6 @@ const useAuth = () => {
     return user && user.loggedin
 }
 
-
-
 const ProtectedRoutes = ( )  => {
 
     useEffect(()=>{
