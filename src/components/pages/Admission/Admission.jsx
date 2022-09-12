@@ -22,6 +22,7 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import { Pagination, Navigation, Autoplay, EffectFade } from "swiper";
 import Meeting from "../../ui/Meeting/Meeting";
+import NavBar from "../../ui/Navbar/Navbar";
 
 const Admission = () => {
   const [meet, SetMeet] = useState(false);
@@ -107,6 +108,10 @@ const Admission = () => {
           </a>
         </div>
       </div>
+
+      <div className='about-responsive-div'>
+        <NavBar />
+        </div>
 
       <div className="about-videos-navigate-container1">
         <div className="about-video-navigate">

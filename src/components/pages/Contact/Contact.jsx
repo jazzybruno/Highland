@@ -10,7 +10,7 @@ import Header from '../../ui/Header/Header';
 import Form from '../../ui/form/form';
 import Footer from '../../ui/Footer/Footer';
 import Cont from '../../ui/Cont/Cont'
-
+import NavBar from '../../ui/Navbar/Navbar';
 import {Swiper , SwiperSlide} from 'swiper/react'
 import{Pagination , Navigation , Autoplay , EffectFade} from 'swiper'
 import "swiper/css"
@@ -92,6 +92,10 @@ function Contact() {
             <div className="about-video-details-logo7">
             <a href="#"> <img src={search} alt="" /></a>
             </div>
+        </div>
+
+        <div className='about-responsive-div'>
+        <NavBar />
         </div>
 
        <div className="about-videos-navigate-container1">

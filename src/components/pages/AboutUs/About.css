@@ -466,3 +466,14 @@ video{
     }
         
   }
+
+  @media only screen and (max-width: 700px) {
+    .about-video-details{
+        display: none;
+        width: 93%;
+        position: absolute;
+        top: 70px;
+        z-index: 20;
+    }
+    
+}
