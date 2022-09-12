@@ -47,7 +47,8 @@ import John from '../../images/Enroll/john.png'
 
 function Layout1 () {
   return (
-    <div className="team-wrapper"> 
+    <div className="team-div-wrapper-responsivness">
+      <div className="team-wrapper"> 
       <div className="team-card card-body ">
         <img className="team-card-img img-fluid" src={Edward} alt="" />
         <div className="team-card__body">
@@ -76,6 +77,7 @@ function Layout1 () {
           <p className="team-card-description"></p>
         </div>
       </div>
+    </div>
     </div>
   )
 }

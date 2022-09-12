@@ -19,7 +19,7 @@
 
 .blog-image {
     padding-bottom: 2em;
-    width: 600px; 
+    width: 100%; 
 }
 
 .card-body>p {
