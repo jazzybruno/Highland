@@ -55,6 +55,7 @@ const Form = ()=>{
         <div className="contact-form-details">
             
                <div className="contact-form-details-map">
+                
                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.008649386626!2d30.0864765142375!3d-2.1503754377843074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19c355704e5b8747%3A0xf721562a915be8e9!2sHighland%20School!5e0!3m2!1sen!2srw!4v1659525960435!5m2!1sen!2srw" width="600" height="450" style={{border: "0"}} allowFullScreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                </div>   
                <div className="contact-form-details-form">
