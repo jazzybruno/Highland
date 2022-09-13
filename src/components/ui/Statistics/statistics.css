@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    flex-direction: row;
     margin-bottom: 30px;
     clear: right;
     font-family: 'Quicksand';
@@ -42,20 +43,17 @@
 
 .top-statistics{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 2em 13em;
-
+    flex-direction: row;
     font-family: 'Quicksand';
 
 }
 .bottom-statistics{
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 1.1em 28em;
-
-    font-family: 'Quicksand';
-
+    justify-content: center;
+    gap: 3rem;
     
 }
 .bottom-statistics img{
@@ -81,32 +79,33 @@
 .grad-static{
     padding-left: 1rem;
 }
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
     .top-statistics{
         font-size: 10px;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         /* padding-right: 3%; */
-        padding: 0em; 
-    }
-  }
+    
+
+
   @media only screen and (max-width: 1000px) {
     .name-sta{
         font-size: 15px;
         
     }
   }
-  @media only screen and (max-width: 1000px) {
+  /* @media only screen and (max-width: 1000px) {
     .bottom-statistics{
         font-size: 10px;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding:1em 9em;
-        /* padding: 0em; */
+        padding: 0em;
     }
-  }
+  } */
   @media only screen and (max-width: 1000px) {
     .top-statistics img{
         font-size: 10px;
@@ -116,7 +115,45 @@
        align-items: center;
         
     }
-    .student-static{
-        padding-left: 80px;
+  
+  }
+
+  @media only screen and (max-width: 700px) {
+    .top-statistics{
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* padding-right: 3%; */
+        padding: 0em; 
+    }
+
+    .bottom-statistics{
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding:1em 9em; */
+        padding: 0em;
+    }
+
+    .top-statistics img{
+        font-size: 10px;
+        padding: 0%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       
+    }
+
+    .bottom-statistics img{
+        font-size: 10px;
+        padding: 0%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        
     }
   }

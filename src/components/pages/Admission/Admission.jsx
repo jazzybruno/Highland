@@ -222,7 +222,7 @@ const Admission = () => {
             {/* the application process one end   */}
           </div>
           <div className="application-section-enroll">
-            <a href="#">ENROLL NOW</a>
+            <a href="/enroll">ENROLL NOW</a>
           </div>
         </div>
         {/* the apply part ends here */}

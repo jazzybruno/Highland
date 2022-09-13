@@ -64,7 +64,7 @@ margin-bottom: 10px;
     justify-content: center;
     padding-bottom: 10px;
     margin-bottom: 50px;
-
+    align-items: center;
 }
 
 .fees-container-requiremenmts a{
@@ -84,11 +84,36 @@ margin-bottom: 10px;
         width: 80%;
       
     }
+
+ 
    
   }
 
 
+  @media only screen and (max-width: 400px) {
+    .fees-container-requiremenmts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 10px;
+        margin-bottom: 50px;
+        align-items: center;
 
+    }
+
+    .fees-container-requiremenmts a{
+        color: #fff;
+        font-size: 16px;
+        font-family: 'Quicksand';
+        font-weight: 400;
+        /* margin-right: 10px; */
+        background: #3148A3;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+  }
 
 
 

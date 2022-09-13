@@ -14,7 +14,7 @@ function Registration() {
         <li>The confirmation that the registration fees were paid</li><br/>
         <li>The student ready for the interview</li><br/>
         <div className="finsih-registration">
-        <Link to="/enroll"><button className='registration-finish'>Finish Enrollment</button></Link>
+        <Link to="/admission"><button className='registration-finish'>Finish Enrollment</button></Link>
         </div>
     </div>
 
