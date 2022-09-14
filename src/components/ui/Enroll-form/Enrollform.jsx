@@ -38,16 +38,16 @@ export default function Enrollform() {
 
         <div className="enroll-form-body">
             <h3 className='enroll-form-header'>Personal Details</h3>
-            <form className="form-container">
+            <form className="form-container-this-one">
 
-            
                 <div className="right-form">
                 <input
                     type="text"
                     placeholder="First Name"
                     onChange={handleChange}
-                    name="firstName"
+                    name="form-control"
                     value={formData.firstName}
+                    className="form-control"
                 />
                 <input
                     type="text"
@@ -55,6 +55,7 @@ export default function Enrollform() {
                     onChange={handleChange}
                     name="DOB"
                     value={formData.DOB}
+                    className="form-control"
                 />
                 <input
                     type="text"
@@ -62,6 +63,7 @@ export default function Enrollform() {
                     onChange={handleChange}
                     name="gender"
                     value={formData.gender}
+                    className="form-control"
                 />
                 <input
                     type="email"
@@ -69,6 +71,7 @@ export default function Enrollform() {
                     onChange={handleChange}
                     name="email"
                     value={formData.email}
+                    className="form-control"
                 />
                 
                 <input
@@ -77,6 +80,7 @@ export default function Enrollform() {
                     onChange={handleChange}
                     name="phone"
                     value={formData.phone}
+                    className="form-control"
                 />
                 <input
                     type="text"
@@ -84,6 +88,7 @@ export default function Enrollform() {
                     onChange={handleChange}
                     name="nationality"
                     value={formData.nationality}
+                    className="form-control"
                 />
             <Link to="/enrollstudent" ><button className="enroll-form-back">Back</button></Link>
 
@@ -95,6 +100,7 @@ export default function Enrollform() {
                     onChange={handleChange}
                     name="lastName"
                     value={formData.lastName}
+                    className="form-control"
                 />
                 
             <input
@@ -103,6 +109,7 @@ export default function Enrollform() {
                     onChange={handleChange}
                     name="place"
                     value={formData.place}
+                    className="form-control"
                 />
             
             <input
@@ -111,6 +118,7 @@ export default function Enrollform() {
                     onChange={handleChange}
                     name="disability"
                     value={formData.disability}
+                    className="form-control"
                 />
                 <input
                     type="text"
@@ -118,6 +126,7 @@ export default function Enrollform() {
                     onChange={handleChange}
                     name="sponsor"
                     value={formData.sponsor}
+                    className="form-control"
                 />
             
             
@@ -128,6 +137,7 @@ export default function Enrollform() {
                     onChange={handleChange}
                     name="insurance"
                     value={formData.insurance}
+                    className="form-control"
                 />
             
             <input
@@ -136,6 +146,7 @@ export default function Enrollform() {
                     onChange={handleChange}
                     name="religion"
                     value={formData.religion}
+                    className="form-control"
                 />
             <Link to="/enrollad" ><button className="enroll-form-next">Next</button></Link>
             </div>

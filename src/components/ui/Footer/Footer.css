@@ -207,6 +207,13 @@ font-size: "20px"
     .main-footer-links{
         flex-direction: column;
     }
+    .footer-contact-content-item{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 28px;   
+        width: 100%;
+        margin-left: 0rem;
+    }
   }
 
   @media only screen and (max-width: 600px) {

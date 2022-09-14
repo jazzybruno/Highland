@@ -106,7 +106,7 @@ const Footer = ()=>{
             {/* the main footer copyright start */}
             <div className="main-footer-copyright">
             <div className="copyright-data">
-            Copyright © 2022. All Rights Reserved |  www.highland-school.com  | Designed by BRIS.
+            Copyright © 2022. All Rights Reserved |  www.highland-school.com  | Designed by BRIS. | Contact : 0790059755 | email: jazzybruno45@gmail.com
             </div>
             </div>
             {/* the main footer copyright start */}

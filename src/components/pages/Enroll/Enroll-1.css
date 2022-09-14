@@ -75,9 +75,27 @@ align-items: center;
     align-items: center;
 }
 
-@media screen and (max-width: 980px) {
-    .main-container-enroll-lower-left-part {
-        flex-direction: column;
-    }
+@media screen and (max-width: 800px) {
+
+
+    .main-container-enroll-lower-left-part{
+        /* background: lavender; */
+        height: 100%;
+        flex: 0 0 0%;
+        max-width: 0%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .main-container-enroll-lower-right-part{
+            /* background: lightblue; */
+            height: 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 }
 

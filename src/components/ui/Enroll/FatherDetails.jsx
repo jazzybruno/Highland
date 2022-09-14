@@ -1,10 +1,24 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import {Link} from 'react-router-dom';
-
+import { useState , useEffect } from 'react';
 import '../Enroll-form-file/File.css'
 
 function FatherDetails() {
+
+    const [div , setDiv] = useState("")
+    var w = window.innerWidth;
+    function setClassName(w) {    
+        if(w > 540){
+            setDiv("file-form")
+        }else{
+            setDiv("container")
+        }
+    }
+
+    useEffect(()=>{
+        setClassName(w)
+    } , [w])
 
     const { register,handleSubmit } = useForm();
     const onChange = (e) => {
@@ -39,7 +53,7 @@ function FatherDetails() {
     }
 
   return (
-    <div className='file-form'>
+    <div className={div}>
         <form onSubmit={handleSubmit(onSubmit)}>
             <h3 className='file-header'>Father's Details</h3>
 
@@ -49,32 +63,29 @@ function FatherDetails() {
                 onChange={handleChange}
                 name="name"
                 value={formData.name}
-                className="parent-enroll-inputs"
+                className="form-control"
             />
             <br/>
 
-            <br/>
-            <input
+           <input
                 type="text"
                 placeholder="Email"
                 onChange={handleChange}
                 name="email"
                 value={formData.email}
-                className="parent-enroll-inputs"
+                className="form-control"
             />
 
            <br/>
 
-          <br/>
              <input
                 type="text"
                 placeholder="National ID"
                 onChange={handleChange}
                 name="ID"
                 value={formData.ID}
-                className="parent-enroll-inputs"
+                className="form-control"
             />
-            <br/>
             <br/>
              <input
                 type="text"
@@ -82,7 +93,7 @@ function FatherDetails() {
                 onChange={handleChange}
                 name="phone"
                 value={formData.phone}
-                className="parent-enroll-inputs"
+               className="form-control"
             />
 
             <br/>

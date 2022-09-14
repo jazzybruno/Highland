@@ -6,7 +6,7 @@ import Enrollform from '../../ui/Enroll-form/Enrollform';
 
 function EnrollForm() {
     return (
-        <div>
+        <div >
            <div className="main-container-enroll">
             {/* the upper part start */}
             <div className="main-container-enroll-upper-part">

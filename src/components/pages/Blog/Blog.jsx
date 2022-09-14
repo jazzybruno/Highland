@@ -19,7 +19,7 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import axios from "axios";
 import NavBar from "../../ui/Navbar/Navbar";
-
+import { ColorRing } from "react-loader-spinner";
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
@@ -153,16 +153,25 @@ function Blog() {
                 <div className="aboutus-details-title-img"> <img src={tiltle} alt="" /></div>
                 <div className="aboutus-details-title-text">Our Blog</div>
               </div>
-              <div className="underline mx-auto"></div>
+              {/* <div className="underline mx-auto"></div> */}
             </div>
           </div>
         </div>
       </section>
   
       <div className="main-div-blogs-posts">
-        {posts.map(post => {
+        {posts.length === 0 ?<div className="main-loader-blog"> <ColorRing
+  visible={true}
+  height="80"
+  width="80"
+  ariaLabel="blocks-loading"
+  wrapperStyle={{}}
+  wrapperClass="blocks-wrapper"
+  colors={['#3148a3' , '#3148a3' , '#3148a3' , '#3148a3' , '#3148a3' ,  ]}
+/></div> :  posts.map((post , index) => {
+          let number = index + 1
           return (
-            <Outline photo={post.photo} label={post.title} description={post.content} />
+            <Outline index={number} photo={post.photo} label={post.title} description={post.content} />
           )
         })}
       </div>
@@ -171,7 +180,7 @@ function Blog() {
         <div>
           <div>
             <div className="text-center">
-              <div className="underline mx-auto"></div>
+              {/* <div className="underline mx-auto"></div> */}
             </div>
           </div>
         </div>

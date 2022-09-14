@@ -1,18 +1,25 @@
-.form-container{
+.form-container-this-one{
 align-items: center; 
 
     /* width: 45%; */
     /* border: 2px solid black; */
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     /* float: right; */
     /* justify-content: space-between; */
     /* padding: 10px; */
     /* align-items: center; */
-    margin-left: 12em;
+    /* margin-left: 12em; */
  
     
 }
+
+.enroll-form-body{
+width: 100%;
+margin-top: 100px;
+}
+
 .enroll-form-header{
     text-align: center;
     justify-content: center;
@@ -110,12 +117,23 @@ align-items: center;
         justify-content: center;
         align-items: center;
         margin-left: 0%;
-      
-        
-        
-        
 
     }
+
+    .form-container{
+        align-items: center; 
+            /* width: 45%; */
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: row;
+            /* float: right; */
+            /* justify-content: space-between; */
+            /* padding: 10px; */
+            /* align-items: center; */
+            margin-left: 12em;
+         
+            
+        }
   }
   
 

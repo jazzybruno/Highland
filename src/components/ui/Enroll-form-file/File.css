@@ -4,9 +4,16 @@
     /* width: 20%; */
     /* border: 1px solid black; */
     /* padding-left: 20px; */
-   
     
 }
+
+.file-buttons1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+
 .file-form input{
     padding: 8px;
     font-size: 0.9em;
