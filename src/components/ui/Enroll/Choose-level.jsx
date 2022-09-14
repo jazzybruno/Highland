@@ -23,10 +23,9 @@ function ChooseLevel() {
             </div>
             <div className="levels-container">
                 {levelList.map((item, index) => (
-                    <div key={index} className="enroll-choose-level mt-4">
-                        <input value={item} type="checkbox" onChange={handleCheck} id="choose-level-input" />
-                        <span>{item}</span>
-                    </div>     
+                    <div class="checkbox" key={index}>
+                    <label><input value={item} type="checkbox" name="remember" onChange={handleCheck} /> {item}</label>
+                  </div>
                 ))}
             </div>
             <div className="enroll-class-btn">

@@ -145,3 +145,13 @@
         margin-top: 2em;
     }
 } */
+
+.class{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 500px){
+    .all-levels-container{
+        display: none;
+    }
+}

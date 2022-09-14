@@ -50,7 +50,7 @@ function Layout2() {
         <div className="team-card__body">
           <h4 className="team-card__title">Isaac Kamali</h4>
           <h5>0782058797</h5>
-          <h6>IT Assistant</h6>
+          <h6>Revenue Collector</h6>
           <p className="team-card__description"></p>
         </div>
       </div>

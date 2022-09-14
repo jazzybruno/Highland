@@ -57,7 +57,7 @@ function Address() {
                 <div className="col-md-4"></div>
             </div>
             {/* <div className='address-nav-btns row mt-4'> */}
-            <div className='file-buttons mt-4'>
+            <div className='file-buttons1 mt-4 '>
                 <Link to="/enrollper"><button className="enroll-back">Back</button></Link>
                 <Link to="/enrollfa"><button className="enroll-next">Next</button></Link>
 

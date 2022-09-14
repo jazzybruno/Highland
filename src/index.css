@@ -3,12 +3,11 @@
 body{
   margin: 0px;
   max-width: 100%;
-  overflow-x: hidden; ;
+  overflow-x: hidden; 
 }
 
 body::-webkit-scrollbar {
   display: none;
-
 }
 
 a:hover{
