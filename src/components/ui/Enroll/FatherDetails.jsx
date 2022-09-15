@@ -1,10 +1,10 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import { useState , useEffect } from 'react';
 import '../Enroll-form-file/File.css'
 
-function FatherDetails() {
+function FatherDetails(props) {
 
     const [div , setDiv] = useState("")
     var w = window.innerWidth;
@@ -20,18 +20,6 @@ function FatherDetails() {
         setClassName(w)
     } , [w])
 
-    const { register,handleSubmit } = useForm();
-    const onChange = (e) => {
-       const file = e.target.files[0];
-
-    } ;
-    const onSubmit = data => {
-       const storageRef = app.storage().ref();
-       const fileRef = storageREf.child(data.image[0].name);
-       fileRef.put(data.image[0]).then(() => {
-           console.log("Uploaded file");
-       });
-    }
 
      const [formData,setFormData] = React.useState(
        {
@@ -52,9 +40,21 @@ function FatherDetails() {
         })
     }
 
+    const navigate = useNavigate()
+    const handleSubmission = () => {
+        const data = props.currentData
+        navigate("/enrollmo" , {
+            state: {
+                ...data,
+                father: formData
+
+            }
+        })
+    }
+
   return (
     <div className={div}>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form>
             <h3 className='file-header'>Father's Details</h3>
 
         <input
@@ -107,7 +107,7 @@ function FatherDetails() {
             </div>
             <div className='file-buttons'>
                 <Link to="/enrollad"><button className="enroll-back">Back</button></Link>
-                <Link to="/enrollmo"><button className="enroll-next">Next</button></Link>
+                <button onClick={handleSubmission} className="enroll-next">Next</button>
 
             </div>
 

@@ -9,6 +9,7 @@ import Swal from 'sweetalert2';
 import { InfinitySpin } from  'react-loader-spinner'
 
 const Post = () => {
+    const [isOpen, setIsOpen] = useState(false);
     const [posts , setPosts] = useState([])
 
     const api = axios.create({
@@ -76,9 +77,9 @@ const Post = () => {
 
     return (
         <div className="main-post-part">
-                   <div className="main-home-page-upper-main-container">
-            <img src={logo} alt="" />
-            Highland School Dashboard
+                   <div className="main-home-page-upper-main-container"> 
+        <img src={logo} alt="" />
+            Highland School 
             <div className="links-for-navigations">
             <a href="/home">Dashboard</a>
             <a href="/posts">Posts</a>
@@ -86,7 +87,23 @@ const Post = () => {
             <a href="/messages">Messages</a>
             <a href="/admissions">Admissions</a>
             </div>
-        </div>
+           </div>
+
+           <div className="main-home-page-upper-main-container1"> 
+            <div className="Navbar">
+       <a href="/home"><img src={logo} alt="logo" className="nav-logo" /></a>
+      <div className={`nav-items ${isOpen && "open"}`}>
+        <a href="/home">Dashboard</a>
+        <a href="/posts">Posts</a>
+        <a href="/post/create">New Post</a>
+        <a href="/messages">Messages</a>
+        <a href="/Admissions">Admissions</a>
+      </div>
+      <div className={`nav-toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
+        <div className="bar"></div>
+      </div>
+    </div>
+           </div>
             <div className="main-post-part-lower"> 
             <h3>The list of all Posts</h3>
            { posts.length === 0 ? 

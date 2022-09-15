@@ -1,0 +1,94 @@
+.main-admission-part-div{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    background: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.main-admission-part-img{
+    height: 250px;
+    width: 30%;
+    margin: 10px;
+}
+
+.main-admission-part-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-admission-part-info{
+    width: 60%;
+
+}
+
+.main-class-some-few-info h6{
+color: rgb(104, 154, 230);
+}
+
+.main-class-some-few-info p span{
+    color: #3148A3;
+    }
+
+    .main-class-some-few-info button{
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        background: #3148A3;
+        color: white;
+        }
+
+ .main-container-lock-photo{
+    height: 250px;
+    width: 200px;
+ }
+
+ .main-container-lock-photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+ }
+
+ .main-container-both-location-details{
+    display: flex;
+    gap: 50px;
+ }
+
+ .main-container-both-location-details h5{
+color: rgb(104, 154, 230);
+margin-top: 10px;
+ }
+
+ .main-container-both-location-details p span{
+    color: #3148A3;
+     }
+
+     .main-container-admission-single{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+     }
+
+     .main-container-admission-single h4{
+       margin-top: 10px;
+       margin-bottom: 10px;
+     }
+
+     .main-container-admission-single h4 span{
+        color: rgb(104, 154, 230);
+      }
+
+     .main-container-admission-single button {
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        background: #3148A3;
+     }

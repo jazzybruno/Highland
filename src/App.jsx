@@ -27,12 +27,16 @@ import Contact1 from './components/pages/Auth/pages/Contact/contact';
 import ProtectedRoutes from "./protectedRoutes";
 import logo from "./components/images/About/logo.svg"
 import { ColorRing } from "react-loader-spinner";
+import Admissions from "./components/pages/Auth/pages/Admission/Admissions";
+import DetailedAdmission from "./components/pages/Auth/pages/Admission/DetailedAdmission";
 import './App.css'
+
 
 const App = () => {
   const isLogged = ProtectedRoutes()
   const [isLoaded , setIsLoaded] = React.useState(false)
   window.addEventListener('load', () => {
+    console.log("Hello World");
     setIsLoaded(true)
   })
 
@@ -55,12 +59,15 @@ const App = () => {
           <Route path="/enrollmo" element={<EnrollMother />} />
           <Route path="/enrollreg" element={<Register />} />
           <Route path="/login" element={<Forms />} />
+         <Route path="/admit" element={<DetailedAdmission />}></Route>
 
           {/* the protected routes  */}
           <Route path="/home" element={isLogged ? <Home /> : <Forms />} />
           <Route path="/posts" element={isLogged ? <Post /> : <Forms />}></Route>
           <Route path="/post/create" element={isLogged ? <NewPost /> : <Forms />}></Route>
           <Route path="/messages" element={isLogged ? <Contact1 /> : <Forms />}></Route>
+          <Route path="/Admissions"  element={isLogged ? <Admissions /> : <Forms />}></Route>
+          
           {/* the protected routes  */}
 
         </Routes>

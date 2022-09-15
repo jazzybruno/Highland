@@ -9,6 +9,17 @@
     font-size: 20px;
 }
 
+.main-home-page-upper-main-container1{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    font-size: 20px; 
+}
+
 .main-home-page-all-container{
     display: flex;
     flex-direction: column;
@@ -84,3 +95,98 @@
     color: rgb(104, 154, 230);
 }
 
+
+@media only screen and (max-width: 730px) {
+    .main-home-page-lowe-main-container-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 40%;
+        padding: 12px;
+        border-radius: 5px;
+        background-color: #fff;
+        /* background: rgb(34, 110, 209);; */
+        margin-top: 30px;
+    }
+
+    .main-home-page-all-container{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: center; */
+        width: 100%;
+        height: 100%;
+        background: #f2f3f5;
+    }
+    
+}
+
+@media only screen and (max-width: 440px) {
+    .main-home-page-lowe-main-container-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 40%;
+        padding: 12px;
+        border-radius: 5px;
+        background-color: #fff;
+        /* background: rgb(34, 110, 209);; */
+        margin-top: 30px;
+    }
+
+    .main-home-page-all-container{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: center; */
+        width: 100%;
+        height: 120vh;
+        background: #f2f3f5;
+    }
+
+    .main-home-page-lowe-main-container-details-logo{
+        font-size: 12px;
+        color: rgb(34, 110, 209);
+        /* color: #fff; */
+    }
+
+    .main-home-page-lower-main-container h1 {
+        text-align: center;
+    }
+    
+    .main-home-page-lowe-main-container-details-description{
+        font-size: 12px;
+        color: black
+    }
+    
+    .main-home-page-lowe-main-container-details-link a{
+        text-decoration: none;
+    }
+    
+}
+
+@media only screen and (max-width: 780px) {
+    .main-home-page-upper-main-container{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #fff;
+        font-size: 20px;
+    }
+    
+    .main-home-page-upper-main-container1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #fff;
+        font-size: 20px; 
+    }
+}

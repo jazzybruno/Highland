@@ -1,10 +1,10 @@
 import React from "react"
 import './Enroll-form.css'
 
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 
-export default function Enrollform() {
+export default function Enrollform(props) {
     const [formData, setFormData] = React.useState(
         {
             firstName: "", 
@@ -33,7 +33,21 @@ export default function Enrollform() {
             }
         })
     }
-    
+
+    const navigate = useNavigate()
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const data = props.currentData
+        navigate("/enrollad" , {
+            state: {
+                ...data,
+                personalDetails: formData
+            }
+        })
+    }
+     
     return (
 
         <div className="enroll-form-body">
@@ -43,14 +57,14 @@ export default function Enrollform() {
                 <div className="right-form">
                 <input
                     type="text"
-                    placeholder="First Name"
+                    placeholder="Firs tName"
                     onChange={handleChange}
-                    name="form-control"
+                    name="firstName"
                     value={formData.firstName}
                     className="form-control"
                 />
                 <input
-                    type="text"
+                    type="date"
                     placeholder="Date Of Birth"
                     onChange={handleChange}
                     name="DOB"
@@ -112,14 +126,17 @@ export default function Enrollform() {
                     className="form-control"
                 />
             
-            <input
+            <select
                     type="text"
                     placeholder="Disability"
                     onChange={handleChange}
                     name="disability"
                     value={formData.disability}
                     className="form-control"
-                />
+                > 
+                <option value="true">True</option>
+                <option value="false">False</option>
+                </select>
                 <input
                     type="text"
                     placeholder="Sponsor"
@@ -148,7 +165,7 @@ export default function Enrollform() {
                     value={formData.religion}
                     className="form-control"
                 />
-            <Link to="/enrollad" ><button className="enroll-form-next">Next</button></Link>
+            <button onClick={handleSubmit} className="enroll-form-next">Next</button>
             </div>
                 
             </form>

@@ -1,11 +1,11 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useState , useEffect } from 'react'
 
 import '../Enroll-form-file/File.css'
 
-function MotherDetails() {
+function MotherDetails(props) {
     const [div , setDiv] = useState("")
     var w = window.innerWidth;
     function setClassName(w) {    
@@ -20,18 +20,7 @@ function MotherDetails() {
         setClassName(w)
     } , [w])
 
-    const { register,handleSubmit } = useForm();
-     const onChange = (e) => {
-        const file = e.target.files[0];
-
-     };
-     const onSubmit = data => {
-        const storageRef = app.storage().ref();
-        const fileRef = storageREf.child(data.image[0].name);
-        fileRef.put(data.image[0]).then(() => {
-            console.log("Uploaded file");
-        });
-     }
+  
      const [formData,setFormData] = React.useState(
        {
         name:"",
@@ -49,11 +38,25 @@ function MotherDetails() {
                 [name]: type === "checkbox" ? checked : value
             }
         })
+        console.log(formData);
+        console.log(props.currentData);
+    }
+
+    const navigate = useNavigate()
+    const handleSubmit = (e) => {
+      e.preventDefault()
+      const data = props.currentData
+      navigate("/enrollreg" , {
+        state: {
+            ...data,
+            mother: formData
+        }
+      })
     }
 
   return (
     <div className={div}>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form >
             <h3 className='file-header'>Mother's Details</h3>
 
         <input
@@ -106,7 +109,7 @@ function MotherDetails() {
             </div>
             <div className='file-buttons'>
                 <Link to="/enrollfa"><button className="enroll-back">Back</button></Link>
-                <Link to="/enrollreg"><button className="enroll-next">Next</button></Link>
+               <button onClick={handleSubmit} className="enroll-next">Next</button>
 
             </div>
 
