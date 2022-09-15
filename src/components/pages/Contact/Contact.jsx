@@ -90,7 +90,7 @@ function Contact() {
             <a href="contact">CONTACT</a>
             </div>
             <div className="about-video-details-logo7">
-            <a href="#"> <img src={search} alt="" /></a>
+            <a href="/login"> <img src={search} alt="" /></a>
             </div>
         </div>
 

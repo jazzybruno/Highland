@@ -1,20 +1,25 @@
+import { Button } from "bootstrap";
 import React from "react";
 import {useState} from 'react';
-import {Link} from 'react-router-dom'
+import {Link , useNavigate} from 'react-router-dom'
 import './Levels.css'
+
 
 function ChooseLevel() {
     const levelList = ["Nursery Level", "Lower Primary Level", "Upper Primary Level"];
-    const [checked, setChecked] = useState([]);
+    const [checked, setChecked] = useState("");
     const handleCheck = (event) => {
-        var updatedList = [...checked];
-        if(event.target.checked) {
-            updatedList = [...checked, event.target.value];
-        } else {
-            updatedList.splice(checked.indexOf(event.target.value), 1);
-        }
-        setChecked(updatedList);
+        let value = event.target.value
+         setChecked(value)
     };
+
+    const navigate = useNavigate()
+
+    const handleSubmit = () => {
+        navigate("/enrollstudent" , {
+            state:  {level: checked}
+        })
+    }
 
     return(
         <div className="levelList">
@@ -24,13 +29,13 @@ function ChooseLevel() {
             <div className="levels-container">
                 {levelList.map((item, index) => (
                     <div class="checkbox" key={index}>
-                    <label><input value={item} type="checkbox" name="remember" onChange={handleCheck} /> {item}</label>
+                    <label><input value={item} type="radio" name="remember" onChange={handleCheck} /> {item}</label>
                   </div>
                 ))}
             </div>
             <div className="enroll-class-btn">
 
-                <Link to="/enrollstudent" className="enroll-continue-btn" >Continue Enrollment</Link>
+                <a to="" onClick={handleSubmit} className="enroll-continue-btn" >Continue Enrollment</a>
             </div>
         </div>
     );

@@ -3,8 +3,11 @@ import './Enroll-1.css'
 import Heading from "../../ui/Enroll/Heading";
 import Level from '../../ui/Enroll/Levels';
 import Address from '../../ui/Enroll/Address';
+import { useLocation } from 'react-router-dom';
 
 function Adress() {
+    const location = useLocation()
+    const data = location.state
     return (
         <div>
 
@@ -28,7 +31,7 @@ function Adress() {
                   {/* the lower right part start  */}
                   
                   <div className="main-container-enroll-lower-right-part">  
-                     <Address />
+                     <Address currentData={data} />
                     </div>
                     {/* the lower right part end  */}
             </div>

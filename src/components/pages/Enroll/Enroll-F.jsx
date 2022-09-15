@@ -3,8 +3,11 @@ import './Enroll-1.css'
 import Heading from "../../ui/Enroll/Heading";
 import Level from '../../ui/Enroll/Levels';
 import FatherDetails from '../../ui/Enroll/FatherDetails';
+import { useLocation } from 'react-router-dom';
 
 function EnrollFather() {
+    const location = useLocation()
+    const data = location.state
     return (
         <div>
            <div className="main-container-enroll">
@@ -26,7 +29,7 @@ function EnrollFather() {
 
                   {/* the lower right part start  */}
                   <div className="main-container-enroll-lower-right-part">  
-                     < FatherDetails />
+                     < FatherDetails  currentData={data}/>
                     </div>
                     {/* the lower right part end  */}
             </div>

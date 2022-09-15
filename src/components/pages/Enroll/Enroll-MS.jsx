@@ -3,8 +3,12 @@ import './Enroll-1.css'
 import Heading from "../../ui/Enroll/Heading";
 import Level from '../../ui/Enroll/Levels';
 import Enrollform from '../../ui/Enroll-form/Enrollform';
+import { useLocation } from 'react-router-dom';
+
 
 function EnrollForm() {
+    const location = useLocation()
+    const data = location.state
     return (
         <div >
            <div className="main-container-enroll">
@@ -26,7 +30,7 @@ function EnrollForm() {
 
                   {/* the lower right part start  */}
                   <div className="main-container-enroll-lower-right-part">  
-                     <Enrollform />
+                     <Enrollform currentData={data} />
                     </div>
                     {/* the lower right part end  */}
             </div>
