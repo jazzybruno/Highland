@@ -4,12 +4,13 @@ body{
   margin: 0px;
   max-width: 100%;
   overflow-x: hidden; 
-}
+} 
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */
 
 a:hover{
   color: white;
 }
+

@@ -312,6 +312,12 @@ video{
     max-width: 30%;
 }
 
+.about-details-testimony-description-container-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
 .about-details-testimony-description-container-message{
     /* flex: 0 0 70%; */
     /* max-width: 70%; */

@@ -1,21 +1,21 @@
-import info from '../../images/Admission/admit.jpg'
-import photo from '../../images/Admission/info.jpg'
+import main from "../../images/Admission/main.png"
+import images from "../../images/Admission/images.png"
 
 const people = [
     {
-        photo: info,
+        photo: main,
         name: "Isaac Kamali",
         role: "Revenue Collector",
         contact: "0782058797"
     },
     {
-        photo: info,
+        photo: images,
         name: "Grace Mbabazi",
         role: "Accountant",
         contact: "0782058797"
     },
     {
-        photo: info,
+        photo: images,
         name: "Nicole Kebra",
         role: "Receptionist",
         contact: "0781653691"
