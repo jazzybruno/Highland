@@ -4,7 +4,7 @@ import "./OurTeam.css";
 // import "../AboutUs/About.css";
 // import Details from "../../ui/Details/details";
 import isaac from '../../images/Enroll/isaac.png'
-import noBg from "../../images/OurTeam/IsaacNice.png";
+import noBg from "../../images/OurTeam/isaacNice.png";
 import jean from '../../images/Enroll/dedieu.png'
 // import isaac from '../../images/Enroll/isaac.png'
 
