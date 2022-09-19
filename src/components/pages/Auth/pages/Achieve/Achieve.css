@@ -1,0 +1,13 @@
+.achievements-details-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.achievements-details-button button{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #2086E4;
+    color: white;
+}
