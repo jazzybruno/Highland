@@ -141,6 +141,8 @@ import Second from '../../ui/second/Second';
 import Statistics from '../../ui/Statistics/Statistics';
 import Highlights from '../../ui/Highlights/Highlights';
 import NavBar from '../../ui/Navbar/Navbar';
+import env from "../../images/Landing/env.jpg"
+import env2 from "../../images/Landing/env2.jpg"
  
 
 
@@ -171,13 +173,19 @@ function Landing() {
 
                          <SwiperSlide> 
                             <div className="swiper-images">
+                            <img src={env} alt="" />
+                            </div>
+                         </SwiperSlide>
+
+                         <SwiperSlide> 
+                            <div className="swiper-images">
                             <img src={slide1} alt="" />
                             </div>
                          </SwiperSlide>
 
                          <SwiperSlide> 
                             <div className="swiper-images">
-                            <img src={slide2} alt="" />
+                            <img src={env2} alt="" />
                             </div>
                          </SwiperSlide>
 

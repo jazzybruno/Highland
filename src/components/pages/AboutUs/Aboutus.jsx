@@ -19,6 +19,7 @@ import { Pagination, Navigation , Autoplay , EffectFade  } from "swiper";
 import Edward from '../../images/About/principal.svg'
 import NavBar from "../../ui/Navbar/Navbar";
 import kebra from "../../images/About/alumni.png";
+import kezi from "../../images/About/kezi.png";
 
 
 const AboutUs = () => {
@@ -185,13 +186,13 @@ const AboutUs = () => {
         <SwiperSlide>
         <div className="about-details-testiomony-description-container">
                        <div className="about-details-testimony-description-container-img">
-                            <img src={Edward} alt="" />
+                            <img src={kezi} alt="" />
                        </div>
                         <div className="about-details-testimony-description-container-message">
-                        <div className="about-details-testimony-description-container-tilte"> Munyaburanga Edward </div>
+                        <div className="about-details-testimony-description-container-tilte"> Ineza Priscilla </div>
                             <div className="about-details-testimony-description-container-role">  Student</div>
                             <div className="about-details-testimony-description-container-message"> 
-                                                "THE BEST SCHOOL IN RWANDA"
+                                                "I can say this is a precious school , no one comes at Highland and leaves without mastering languages like English and French"
                                                          </div>
                  </div>
                         </div>
