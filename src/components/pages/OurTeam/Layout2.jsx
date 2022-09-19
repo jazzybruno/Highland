@@ -4,6 +4,7 @@ import "./OurTeam.css";
 // import "../AboutUs/About.css";
 // import Details from "../../ui/Details/details";
 import isaac from '../../images/Enroll/isaac.png'
+import noBg from "../../images/OurTeam/IsaacNice.png";
 import jean from '../../images/Enroll/dedieu.png'
 // import isaac from '../../images/Enroll/isaac.png'
 
@@ -46,7 +47,7 @@ function Layout2() {
   return (
     <div className="team-wrapper"> 
       <div className="team-card card-body ">
-        <img className="team-card-img img-fluid" src={isaac} alt="" />
+        <img className="team-card-img img-fluid" src={noBg} alt="" />
         <div className="team-card__body">
           <h4 className="team-card__title">Isaac Kamali</h4>
           <h5>0782058797</h5>
@@ -65,7 +66,7 @@ function Layout2() {
       </div>
       
       <div className="team-card card-body ">
-        <img className="team-card-img img-fluid" src={isaac} alt="" />
+        <img className="team-card-img img-fluid" src={noBg} alt="" />
         <div className="team-card__body">
           <h4 className="team-card__title">Grace Mbabazi</h4>
           <h5>0788891743</h5>

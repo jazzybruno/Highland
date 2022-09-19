@@ -18,6 +18,7 @@ import Achievements from "../../ui/Achievement/Achievement";
 import { Pagination, Navigation , Autoplay , EffectFade  } from "swiper";
 import Edward from '../../images/About/principal.svg'
 import NavBar from "../../ui/Navbar/Navbar";
+import kebra from "../../images/About/alumni.png";
 
 
 const AboutUs = () => {
@@ -58,8 +59,8 @@ const AboutUs = () => {
         },
         {
             id: 4,
-            title: "Third best child in the country from Highland",
-            desc: "By the names of Agasaro Bethia , the child from highland in the national exam came in the top 5 best students  in Rwanada in the national exams of 2020-2021 "
+            title: "Students continue to be the best ",
+            desc: "The children who finish at Highland School continue to excell as they have been tauhgt the best and they are the best in the schools."
         }
     ]
 
@@ -72,7 +73,7 @@ const AboutUs = () => {
        {/* the video about us video start */}
        <div className="aboutus-video">
          <div className="orientation"></div>
-        <video src={Video}  autoPlay={true} loop={true}  muted />
+        <video src={Video}  autoPlay loop muted  />
         <div className="about-video-details">
             <div className="about-video-details-logo1">
                <a href="/"> <img src={logo} alt="logo" /></a>
@@ -161,9 +162,23 @@ const AboutUs = () => {
                         <div className="about-details-testimony-description-container-message">
                         <div className="about-details-testimony-description-container-tilte"> Munyaburanga Edward </div>
                             <div className="about-details-testimony-description-container-role">  Principal</div>
-                            <div className="about-details-testimony-description-container-message"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, ut! Blanditiis aspernatur corporis error, ipsa dolores explicabo tempora quis sed sapiente!
-                             Amet est nihil animi, natus optio blanditiis consequatur soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ratione cumque dolor voluptate ducimus, quae voluptatibus id voluptatem repellendus, quia iure, suscipit
+                            <div className="about-details-testimony-description-container-message"> 
+                            Education in Highland will always reflect the confidence we have in our student's ability and our aim to prepare students for the challenges of the future
                              </div>
+                 </div>
+                        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="about-details-testiomony-description-container">
+                       <div className="about-details-testimony-description-container-img">
+                            <img src={kebra} alt="" />
+                       </div>
+                        <div className="about-details-testimony-description-container-message">
+                        <div className="about-details-testimony-description-container-tilte"> Munyaburanga Nicole Kebra </div>
+                            <div className="about-details-testimony-description-container-role"> Alumni </div>
+                            <div className="about-details-testimony-description-container-message"> 
+                            Highland School has taught me to be a confident in everything i do and that has helped me to achieve my goals 
+                                 </div>
                  </div>
                         </div>
         </SwiperSlide>
@@ -174,24 +189,10 @@ const AboutUs = () => {
                        </div>
                         <div className="about-details-testimony-description-container-message">
                         <div className="about-details-testimony-description-container-tilte"> Munyaburanga Edward </div>
-                            <div className="about-details-testimony-description-container-role">  Principal</div>
-                            <div className="about-details-testimony-description-container-message"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, ut! Blanditiis aspernatur corporis error, ipsa dolores explicabo tempora quis sed sapiente!
-                             Amet est nihil animi, natus optio blanditiis consequatur soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ratione cumque dolor voluptate ducimus, quae voluptatibus id voluptatem repellendus, quia iure, suscipit
-                             </div>
-                 </div>
-                        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="about-details-testiomony-description-container">
-                       <div className="about-details-testimony-description-container-img">
-                            <img src={Edward} alt="" />
-                       </div>
-                        <div className="about-details-testimony-description-container-message">
-                        <div className="about-details-testimony-description-container-tilte"> Munyaburanga Edward </div>
-                            <div className="about-details-testimony-description-container-role">  Principal</div>
-                            <div className="about-details-testimony-description-container-message"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, ut! Blanditiis aspernatur corporis error, ipsa dolores explicabo tempora quis sed sapiente!
-                             Amet est nihil animi, natus optio blanditiis consequatur soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ratione cumque dolor voluptate ducimus, quae voluptatibus id voluptatem repellendus, quia iure, suscipit
-                             </div>
+                            <div className="about-details-testimony-description-container-role">  Student</div>
+                            <div className="about-details-testimony-description-container-message"> 
+                                                "THE BEST SCHOOL IN RWANDA"
+                                                         </div>
                  </div>
                         </div>
         </SwiperSlide>

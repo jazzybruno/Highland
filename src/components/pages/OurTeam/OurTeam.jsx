@@ -16,6 +16,7 @@ import Footer from "../../ui/Footer/Footer";
 import Header from "../../ui/Header/Header";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay, EffectFade } from "swiper";
+import kebra from '../../images/OurTeam/kebra.png'
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -139,7 +140,7 @@ function OurTeam() {
       </div>
       <div className="team-wrapper">
         <div className="team-card card-body ">
-          <img className="team-card-img img-fluid" src={nicole} alt="" />
+          <img className="team-card-img img-fluid" src={kebra} alt="" />
           <div className="team-card__body">
             <h4 className="team-card__title">Nicole Kebra Munyaburanga</h4>
             <h5>0786207426</h5>
