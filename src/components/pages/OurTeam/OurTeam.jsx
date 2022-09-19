@@ -22,6 +22,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import NavBar from "../../ui/Navbar/Navbar";
+import env from "../../images/Landing/env.jpg"
+import env2 from "../../images/Landing/env2.jpg"
 
 function OurTeam() {
   return (
@@ -45,13 +47,19 @@ function OurTeam() {
         >
           <SwiperSlide>
             <div className="swiper-images">
+              <img src={env2} alt="" />
+            </div>
+          </SwiperSlide>
+          
+          <SwiperSlide>
+            <div className="swiper-images">
               <img src={slide1} alt="" />
             </div>
           </SwiperSlide>
 
           <SwiperSlide>
             <div className="swiper-images">
-              <img src={slide2} alt="" />
+              <img src={env} alt="" />
             </div>
           </SwiperSlide>
 
