@@ -45,7 +45,7 @@ const AboutUs = () => {
     const   Achieve = [
         {
             id: 1,
-            title: "Third best child in the country from Highland",
+            title: "Fifth best child in the country from Highland",
             desc: "By the names of Agasaro Bethia , the child from highland in the national exam came in the top 5 best students  in Rwanada in the national exams of 2020-2021 "
         },
         {

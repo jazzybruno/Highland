@@ -42,7 +42,8 @@ const App = () => {
 
   return (
     <div>
-      {isLoaded ? <BrowserRouter>
+      {/* {isLoaded ?  */}
+      <BrowserRouter>
         <Routes>
           {/* <Route path='/admission/enroll' element={<ParentDetails />} /> */}
           <Route path="/" element={<Landing/>}></Route>
@@ -71,17 +72,18 @@ const App = () => {
           {/* the protected routes  */}
 
         </Routes>
-      </BrowserRouter> : <div className="loader-to-bring-images">
-      <ColorRing
-  visible={true}
-  height="80"
-  width="80"
-  ariaLabel="blocks-loading"
-  wrapperStyle={{}}
-  wrapperClass="blocks-wrapper"
-  colors={['#3148a3' , '#3148a3' , '#3148a3' , '#3148a3' , '#3148a3' ,  ]}
-/>
-      </div>}
+      </BrowserRouter> :
+{/* //        <div className="loader-to-bring-images">
+//       <ColorRing
+//   visible={true}
+//   height="80"
+//   width="80"
+//   ariaLabel="blocks-loading"
+//   wrapperStyle={{}}
+//   wrapperClass="blocks-wrapper"
+//   colors={['#3148a3' , '#3148a3' , '#3148a3' , '#3148a3' , '#3148a3' ,  ]}
+// />
+//       </div>} */}
       
       
     </div>
