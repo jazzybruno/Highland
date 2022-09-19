@@ -74,7 +74,7 @@ function Registration(props) {
   return (
     <div className='registration-body'>
         <h1 className='registration-head'>Registration fees</h1>
-        <p className='registration-para'>The registration fees are 10,000 Rwandan Francs ,and canbe payed either on bank or momo: 0790059755</p>
+        <p className='registration-para'>The registration fees are 10,000 Rwandan Francs ,and canbe payed either on bank or momo: 0786793552</p>
         <p className='registration-para'>You will get a call no more than today confirming the day of interviewing the child.</p>
         <h2>You should come with the following Documents:</h2>
         <li>Student's prrevious report card for a usual student</li><br/>
