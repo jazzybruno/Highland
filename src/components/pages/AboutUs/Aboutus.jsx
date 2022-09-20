@@ -20,6 +20,9 @@ import Edward from '../../images/About/principal.svg'
 import NavBar from "../../ui/Navbar/Navbar";
 import kebra from "../../images/About/alumni.png";
 import kezi from "../../images/About/kezi.png";
+import axios from "axios";
+import { useState , useEffect } from "react";
+import Swal from "sweetalert2";
 
 
 const AboutUs = () => {
@@ -42,29 +45,32 @@ const AboutUs = () => {
         }
     ]
 
-    const   Achieve = [
-        {
-            id: 1,
-            title: "Fifth best child in the country from Highland",
-            desc: "By the names of Agasaro Bethia , the child from highland in the national exam came in the top 5 best students  in Rwanada in the national exams of 2020-2021 "
-        },
-        {
-            id: 2,
-            title: "Winning the Shupavu 2910",
-            desc: "The children at Highland won the shupavu 2910 where they met and competed with other school like kigali Parents and proven they are the best by winning the shupavu"
-        },
-        {
-            id: 3,
-            title: "Students always in the first grade",
-            desc: "The Childern  at Highland  school are always in the first grade in the Primary Leaving National Exams meaning that no student has ever gone under 15."
-        },
-        {
-            id: 4,
-            title: "Students continue to be the best ",
-            desc: "The children who finish at Highland School continue to excell as they have been tauhgt the best and they are the best in the schools."
-        }
-    ]
+    const [Achieve, setAchieve] = useState([]);
 
+  
+    const api = axios.create({
+      baseURL: "https://highland-backend.herokuapp.com/",
+    });
+ 
+  
+    const getMessages = () => {
+      api
+        .get("/achieve")
+        .then((res) => {
+          console.log(res);
+          setAchieve(res.data.data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    };
+  
+    useEffect(() => {
+      getMessages();
+    } , []);
+    
+
+   
     return (
         <div>
         <Header />
