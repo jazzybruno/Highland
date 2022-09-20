@@ -29,7 +29,11 @@ import logo from "./components/images/About/logo.svg"
 import { ColorRing } from "react-loader-spinner";
 import Admissions from "./components/pages/Auth/pages/Admission/Admissions";
 import DetailedAdmission from "./components/pages/Auth/pages/Admission/DetailedAdmission";
+import Achieve from "./components/pages/Auth/pages/Achieve/Achieve";
 import './App.css'
+import NewAchieve from "./components/pages/Auth/pages/Achieve/NewAchieve";
+import Stats from "./components/pages/Auth/pages/Stats/Stats";
+import UpdateStats from "./components/pages/Auth/pages/Stats/newStats";
 
 
 const App = () => {
@@ -68,6 +72,10 @@ const App = () => {
           <Route path="/post/create" element={isLogged ? <NewPost /> : <Forms />}></Route>
           <Route path="/messages" element={isLogged ? <Contact1 /> : <Forms />}></Route>
           <Route path="/Admissions"  element={isLogged ? <Admissions /> : <Forms />}></Route>
+          <Route path="/achieve"  element={isLogged ? <Achieve /> : <Forms />}></Route>
+          <Route path="/achieve/create"  element={isLogged ? <NewAchieve /> : <Forms />}></Route>
+          <Route path="/stats"  element={isLogged ? <Stats /> : <Forms />}></Route>
+          <Route path="/stats/edit"  element={isLogged ? <UpdateStats /> : <Forms />}></Route>
           
           {/* the protected routes  */}
 
