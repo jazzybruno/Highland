@@ -47,7 +47,7 @@ const Achieve = () => {
             timer: 3000
         })
         .then(()=>{
-            window.location.href= "/achievements"
+            window.location.href= "/achieve"
         })
     })
     .catch((err)=>{
@@ -101,7 +101,8 @@ const Achieve = () => {
         </div>
       </div>
 
-      <div className="main-home-page-lower-main-container">
+      <div className="main-post-part-lower">
+        <button><a href="/achieve/create">New Achievement</a></button>
         {achievements.map((achievement , index) => {
           return (
             <div key={index} className="achievements-details">

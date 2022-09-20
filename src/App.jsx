@@ -31,6 +31,7 @@ import Admissions from "./components/pages/Auth/pages/Admission/Admissions";
 import DetailedAdmission from "./components/pages/Auth/pages/Admission/DetailedAdmission";
 import Achieve from "./components/pages/Auth/pages/Achieve/Achieve";
 import './App.css'
+import NewAchieve from "./components/pages/Auth/pages/Achieve/NewAchieve";
 
 
 const App = () => {
@@ -70,6 +71,7 @@ const App = () => {
           <Route path="/messages" element={isLogged ? <Contact1 /> : <Forms />}></Route>
           <Route path="/Admissions"  element={isLogged ? <Admissions /> : <Forms />}></Route>
           <Route path="/achieve"  element={isLogged ? <Achieve /> : <Forms />}></Route>
+          <Route path="/achieve/create"  element={isLogged ? <NewAchieve /> : <Forms />}></Route>
           
           {/* the protected routes  */}
 
