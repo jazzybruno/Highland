@@ -81,11 +81,12 @@ const Post = () => {
         <img src={logo} alt="" />
             Highland School 
             <div className="links-for-navigations">
-            <a href="/home">Dashboard</a>
             <a href="/posts">Posts</a>
             <a href="/post/create">New Post</a>
             <a href="/messages">Messages</a>
             <a href="/admissions">Admissions</a>
+            <a href="/stats">Statistics</a>
+        <a href="/achieve">Achievements</a>
             </div>
            </div>
 
@@ -93,11 +94,12 @@ const Post = () => {
             <div className="Navbar">
        <a href="/home"><img src={logo} alt="logo" className="nav-logo" /></a>
       <div className={`nav-items ${isOpen && "open"}`}>
-        <a href="/home">Dashboard</a>
         <a href="/posts">Posts</a>
         <a href="/post/create">New Post</a>
         <a href="/messages">Messages</a>
         <a href="/Admissions">Admissions</a>
+        <a href="/stats">Statistics</a>
+        <a href="/achieve">Achievements</a>
       </div>
       <div className={`nav-toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
         <div className="bar"></div>
