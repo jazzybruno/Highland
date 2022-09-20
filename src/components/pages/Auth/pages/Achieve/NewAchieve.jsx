@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useState , useEffect } from 'react'
 import "./Achieve.css"
 import axios from 'axios'
+import Swal from 'sweetalert2'
 
 
 function NewAchieve(props) {
@@ -14,6 +15,7 @@ function NewAchieve(props) {
 
   const api = axios.create({
     baseURL: "https://highland-backend.herokuapp.com/",
+    // baseURL: "http://localhost:3000/",
   });
 
   const config = {
@@ -28,17 +30,29 @@ function NewAchieve(props) {
 
     const handleSubmit = (e) => {
       e.preventDefault()
-      const achivement = {
+      let achivement = {
         title : title,
         desc: description 
       }
-      console.log(achivement);
-        api.post("/achieve" , achivement , config   )
+  
+        api.post(`/achieve?title=${title}&desc=${description}` , achivement , config)
         .then(res=>{
-            console.log(res);
+          Swal.fire({
+            icon: 'success',
+            title: 'The Achievement has been saved ',
+            showConfirmButton: false,
+            timer: 5000
+        })
+        .then(()=>{
+            window.location.href= "/achieve"
+        })
         })
         .catch(err=>{
-            console.log(err);
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+        })
         })
     }
 
@@ -55,21 +69,23 @@ function NewAchieve(props) {
                 onChange={(e)=>{
                     setTitle(e.target.value)
                 }}
-                name="title"
+                // name="title"
                 value={title}
                 className="form-control"
+                required
             />
 
             <br/>
             <input
                 type="text"
-                placeholder="descriptionription"
+                placeholder="description"
                 onChange={(e)=>{
                     setdescription(e.target.value)
                 }}
-                name="description"
+                // name="description"
                 value={description}
                 className="form-control"
+                required
             />
            
            <br />
