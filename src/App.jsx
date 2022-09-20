@@ -33,6 +33,7 @@ import Achieve from "./components/pages/Auth/pages/Achieve/Achieve";
 import './App.css'
 import NewAchieve from "./components/pages/Auth/pages/Achieve/NewAchieve";
 import Stats from "./components/pages/Auth/pages/Stats/Stats";
+import UpdateStats from "./components/pages/Auth/pages/Stats/newStats";
 
 
 const App = () => {
@@ -74,6 +75,7 @@ const App = () => {
           <Route path="/achieve"  element={isLogged ? <Achieve /> : <Forms />}></Route>
           <Route path="/achieve/create"  element={isLogged ? <NewAchieve /> : <Forms />}></Route>
           <Route path="/stats"  element={isLogged ? <Stats /> : <Forms />}></Route>
+          <Route path="/stats/edit"  element={isLogged ? <UpdateStats /> : <Forms />}></Route>
           
           {/* the protected routes  */}
 

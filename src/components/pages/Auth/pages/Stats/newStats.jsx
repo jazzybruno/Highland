@@ -9,10 +9,16 @@ import { useState } from "react";
 import axios from "axios";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
-const Stats = ( ) =>{
+const UpdateStats = ( ) =>{
     const [isOpen, setIsOpen] = useState(false);
     const [stats , setStats] = useState({})
+    const [teachers , setTeachers] = useState(0)
+    const [graduates , setgraduates] = useState(0)
+    const [buildings , setbuildings] = useState(0)
+    const [OfficeLocation , setOfficeLocation] = useState(0)
+    const [students , setStudents] = useState(0)
 
     const navigate = useNavigate()
 
@@ -40,6 +46,37 @@ const Stats = ( ) =>{
         console.log(err);
       });
   };
+
+  const updateHandler = ( event ) => {
+  const id = stats._id
+    const data = new FormData();
+    data.append("teachers", teachers);
+    data.append("graduates", graduates);
+    data.append("buildings", buildings);
+    data.append("OfficeLocation", OfficeLocation);
+    data.append("students", students);
+
+    api
+      .put(`/stats/${id}?teachers=${teachers}&graduates=${graduates}&buildings=${buildings}&OfficeLocation=${OfficeLocation}&students=${students}`, data, config)
+      .then((res) => {
+        Swal.fire({
+            icon: 'success',
+            title: 'The Statisitcs has been changed',
+            showConfirmButton: false,
+            timer: 5000
+        })
+        .then(()=>{
+            window.location.href= "/stats"
+        })
+      })
+      .catch((err) => {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+        })
+      });
+  }
 
   useEffect(()=>{
         getMessages()
@@ -82,28 +119,36 @@ const Stats = ( ) =>{
    <div className='main-new-achievement-sub2'>
                 
                 <div className="container">
-                    <form action="">
+                    
                         <label htmlFor="">Teachers</label>
-                        <input type="text" className="form-control" value={stats.teachers} readOnly />
+                        <input type="text" className="form-control"  onChange={(e)=>{
+                            setTeachers(e.target.value)
+                        }}  />
 
                         <label htmlFor="">Graduates</label>
-                        <input type="text" className="form-control" value={stats.graduates} readOnly />
+                        <input type="text" className="form-control"  onChange={(e)=>{
+                            setgraduates(e.target.value)
+                        }} />
 
                         <label htmlFor="">Buildings</label>
-                        <input type="text" className="form-control" value={stats.buildings} readOnly />
+                        <input type="text" className="form-control"  onChange={(e)=>{
+                            setbuildings(e.target.value)
+                        }} />
 
                         <label htmlFor="">Office location</label>
-                        <input type="text" className="form-control" value={stats.OfficeLocation} readOnly />
+                        <input type="text" className="form-control"  onChange={(e)=>{
+                            setOfficeLocation(e.target.value)
+                        }} />
 
                         <label htmlFor="">Students</label>
-                        <input type="text" className="form-control" value={stats.students} readOnly />
+                        <input type="text" className="form-control" onChange={(e)=>{
+                            setStudents(e.target.value)
+                        }} />
 
-                        <div className="main-div-navigate-button">
                         <button onClick={()=>{
-                            navigate('/stats/edit')
-                        }}>Edit</button>
-                        </div>
-                    </form>
+                            updateHandler()
+                        }}>Save</button>
+                    
                 </div>
 
            </div>
@@ -112,4 +157,4 @@ const Stats = ( ) =>{
     </div> )
 }
 
-export default Stats;
+export default UpdateStats;
