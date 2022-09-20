@@ -148,6 +148,7 @@ import env2 from "../../images/Landing/env2.jpg"
 
 
 function Landing() {
+   
   return (
     <div className='landing'>
          <Header />
